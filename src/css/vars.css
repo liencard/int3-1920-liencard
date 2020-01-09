@@ -1,0 +1,17 @@
+:root {
+  /* colors */
+  --purpleColor: #4546a3;
+  --backgroundColor: #f9fafe;
+  /* margins */
+  --smallMargin: 3rem;
+  --mediumMargin: 4rem;
+  /* borders */
+  --borderRadius: .7rem;
+  --layoutBorderRadius: 3rem;
+  /* font */
+  --font: 'Open Sans', sans-serif;
+  --fontWeightLight: 300;
+  --fontWeightRegular: 400;
+  --fontWeightSemiBold: 600;
+  --fontWeightBold: 700;
+}
