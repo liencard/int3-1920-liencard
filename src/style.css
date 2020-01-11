@@ -1,4 +1,35 @@
+/* @import './css/reset.css'; */
+@import './css/humo.css';
+@import './css/vars.css';
+@import './css/navigation.css';
+@import './css/product.css';
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+/* stylelint-disable*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* stylelint-enable*/
+
 body {
-  background-color: lightsalmon;
-  font-family: sans-serif;
+  font-family: news-gothic-std, sans-serif;
+  font-size: 1.6rem;
+  /* font-family: var(--font); */
+  height: 100%;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  margin-top: 6rem;
 }

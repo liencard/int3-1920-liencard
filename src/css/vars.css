@@ -1,7 +1,11 @@
 :root {
   /* colors */
-  --purpleColor: #4546a3;
-  --backgroundColor: #f9fafe;
+  --blackColor: black;
+  --whiteColor: white;
+  --redColor: #ec121e;
+  --yellowColor: #f8dc31;
+  --gray2Color: #4f4f4f;
+  --gray3Color: #828282;
   /* margins */
   --smallMargin: 3rem;
   --mediumMargin: 4rem;

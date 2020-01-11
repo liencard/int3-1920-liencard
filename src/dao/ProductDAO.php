@@ -2,10 +2,10 @@
 
 require_once( __DIR__ . '/DAO.php');
 
-class TodoDAO extends DAO {
+class ProductDAO extends DAO {
 
-  public function selectAll(){
-    $sql = "SELECT * FROM `todos`";
+  public function selectAllProducts(){
+    $sql = "SELECT * FROM `products`";
     $stmt = $this->pdo->prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
