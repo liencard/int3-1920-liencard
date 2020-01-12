@@ -3,6 +3,7 @@
 @import './css/vars.css';
 @import './css/navigation.css';
 @import './css/product.css';
+@import './css/detail.css';
 
 html {
   box-sizing: border-box;
@@ -32,4 +33,16 @@ body {
 
 .title {
   margin-top: 6rem;
+}
+
+.btn {
+  border-radius: 2px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+a:hover {
+  border: none;
 }

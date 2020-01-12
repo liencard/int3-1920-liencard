@@ -16,5 +16,19 @@ class ProductsController extends Controller {
     $this->set('products', $products);
   }
 
+  public function detail() {
+
+    if(!empty($_GET['id'])){
+      $product = $this->productDAO->selectProductById($_GET['id']);
+    }
+
+    if(empty($product)){
+      header('Location: index.php');
+      exit();
+    }
+
+    $this->set('product', $product);
+  }
+
 
 }

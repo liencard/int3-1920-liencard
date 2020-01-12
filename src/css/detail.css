@@ -1,0 +1,85 @@
+.back__btn::before {
+  background-image: url(../assets/img/arrow-red.svg);
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-gap: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem;
+}
+
+.book__author {
+  font-size: 1.8rem;
+  color: var(--gray3Color);
+  margin-bottom: 3rem;
+}
+
+.book__wrapper--mini {
+  display: flex;
+}
+
+.book__lang {
+  padding-right: 2rem;
+  border-right: .1rem solid var(--blackColor);
+  margin-right: 2rem;
+}
+
+.book__description {
+  margin-top: 2.4rem;
+}
+
+.book__info {
+  order: 2;
+  font-size: 1.4rem;
+}
+
+.book-type label {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.book-type input {
+  display: none;
+}
+
+.booktype__wrapper {
+  display: flex;
+  flex-direction: column;
+  border: .05rem solid var(--blackColor);
+  padding: 1rem;
+}
+
+.booktype__wrapper span:first-child {
+  font-weight: 700;
+}
+
+.booktype__wrapper:active {
+  border: .05rem solid var(--redColor);
+}
+
+.order__btn {
+  background-color: var(--blackColor);
+  align-items: center;
+  color: var(--whiteColor);
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+.order__btn:hover {
+  background-color: var(--redColor);
+}
+
+.buy__info p {
+  line-height: 2;
+}
+
+.book__img {
+  width: 60%;
+  margin: 0 auto;
+}

@@ -1,14 +1,70 @@
+.color--red {
+  color: var(--redColor);
+}
+
 .filters {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  margin-top: 6rem;
+}
+
+.highlight {
+  display: flex;
+  justify-content: space-between;
+  height: 20rem;
+  padding: 0 3rem;
+}
+
+.highlight__book {
+  background-color: var(--yellowColor);
+}
+
+.highlight__abbo {
+  background-color: var(--gray6Color);
+}
+
+.highlight__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 2.2rem;
+}
+
+.highlight__subtitle {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+}
+
+.highlight__btn {
+  border: .1rem solid var(--redColor);
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  display: inline-block;
+
+  &::after {
+    background-image: url(../assets/img/arrow-red.svg);
+  }
+}
+
+.highlight__img {
+  width: 15.5rem;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5rem;
-
   margin-top: 6rem;
 }
 
