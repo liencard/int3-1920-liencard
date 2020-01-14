@@ -1,25 +1,12 @@
 <h1 class="title">Webshop</h1>
 
-
 <!-- FILTERS -->
 <section class="filters">
   <h2 class="hidden">Filter</h2>
   <p>14 results</p>
 
-  <!-- <form action="index.php" method="get" class="filter__form">
-    <label for="all">
-      <input class="filter__input" type="radio" id="all>" name="type" value="all">
-      <span>alles</span>
-      <?php foreach($types as $type): ?>
-        <input class="filter__input" type="radio" id="all>" name="type" value="<?php echo $type['type']?>">
-        <span><?php echo $type['type']?></span>
-      <?php endforeach; ?>
-    </label>
-    <input type="submit" class="filter__submit" value="filter">
-  </form> -->
-
   <form action="index.php" method="get" class="filter__form">
-    <label class="xx">
+    <label>
       <input type="radio" class="filter__input" name="type" value="all">
       <span class="filter__text">alles</span>
     </label>
@@ -32,11 +19,11 @@
     <input type="submit" class="filter__submit" value="filter">
   </form>
 
-  <select name="type" id="type" class="filter-type">
+  <!-- <select name="type" id="type" class="filter-type">
     <option value="all">-- Alles --</option>
     <option value="all">A-Z</option>
     <option value="all">Z-A</option>
-  </select>
+  </select> -->
 
 </section>
 
@@ -68,15 +55,16 @@
   <?php foreach ($products as $product): ?>
     <article class="product">
       <div class="product__info">
-        <h3 class="product__title"><?php echo $product['title']; ?></h3>
-        <p class="product__subtitle"><?php echo $product['subtitle']; ?></p>
+        <div class="product__head">
+          <h3 class="product__title"><?php echo $product['title']; ?></h3>
+          <p class="product__subtitle"><?php echo $product['subtitle']; ?></p>
+        </div>
         <div class="product__buy">
           <p class="product__price">€12,99</p>
           <a class="product__btn" href="index.php?page=detail&id=<?php echo $product['id']; ?>" >+ <img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"></a>
         </div>
       </div>
-      <a class="" href="index.php?page=detail&id=<?php echo $product['id']; ?>" ><img class="product__img" srcset=".<?php echo $product['image']; ?>" sizes="15px" src="<?php echo $product['image']; ?>" alt="boekcover farenheit 451"></a>
+      <a class="product__link" href="index.php?page=detail&id=<?php echo $product['id']; ?>" ><img class="product__img" srcset=".<?php echo $product['image']; ?>" sizes="15px" src="<?php echo $product['image']; ?>" alt="<?php echo $product['title']; ?>"></a>
     </article>
   <?php endforeach; ?>
-
 </section>

@@ -29,6 +29,7 @@ class ProductsController extends Controller {
     if(!empty($_GET['id'])){
       $product = $this->productDAO->selectProductById($_GET['id']);
       $options = $this->productDAO->selectOptionsById($_GET['id']);
+      $images = $this->productDAO->selectImagesById($_GET['id']);
     }
 
     if(empty($product)){
@@ -38,6 +39,7 @@ class ProductsController extends Controller {
 
     $this->set('product', $product);
     $this->set('options', $options);
+    $this->set('images', $images);
   }
 
 

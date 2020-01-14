@@ -2,9 +2,9 @@
 @import './css/humo.css';
 @import './css/reset.css';
 @import './css/vars.css';
-@import './css/navigation.css';
-@import './css/product.css';
-@import './css/detail.css';
+@import './css/components/navigation.css';
+@import './css/components/product.css';
+@import './css/components/detail.css';
 
 html {
   box-sizing: border-box;
@@ -46,4 +46,24 @@ body {
 
 a:hover {
   border: none;
+}
+
+@media screen and (min-width: 1100px) {
+
+  .container {
+    margin: 0 auto;
+    padding: 0 4px;
+    width: 1016px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .container {
+    margin: 2rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
 }

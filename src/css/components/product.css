@@ -2,11 +2,35 @@
   color: var(--redColor);
 }
 
+/* Filter */
+
 .filters {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.filter__input {
+  display: none;
+}
+
+.filter__text {
+  text-transform: capitalize;
+  /* margin: 0 1rem; */
+  padding: 0 2rem;
+  border-right: .1rem solid var(--blackColor);
+}
+
+.filter__text:first-child {
+  color: purple;
+}
+
+.filter__input:checked ~ .filter__text {
+  color: var(--redColor);
+  font-weight: 700;
+}
+
+/* Highlights */
 
 .highlights {
   display: grid;
@@ -50,11 +74,12 @@
   border-radius: 2px;
   display: inline-block;
   padding-right: 4rem;
+  font-size: 1.2rem;
 
   &::after {
     content: '';
     position: absolute;
-    background-image: url(../assets/img/arrow-red.svg);
+    background-image: url(../../assets/img/arrow-red.svg);
     height: 2rem;
     width: 2rem;
     background-repeat: no-repeat;
@@ -68,6 +93,8 @@
   margin-bottom: -2rem;
 }
 
+/* Products */
+
 .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -76,8 +103,19 @@
 }
 
 .product {
+  display: grid;
+  grid-template-rows: 5fr 2fr;
+  justify-content: center;
+}
+
+.product__info {
+  order: 2;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+}
+
+.product__head {
+  flex: 1;
 }
 
 .product__title {
@@ -91,9 +129,15 @@
   margin-bottom: 1rem;
 }
 
+.product__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 .product__img {
   width: 70%;
-  margin-bottom: 2rem;
 }
 
 .product__buy {
@@ -118,24 +162,47 @@
   padding: .5rem 1rem;
 }
 
-/* Filter */
+@media screen and (max-width: 780px) {
 
-.filter__input {
-  display: none;
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .highlights {
+    grid-template-columns: 1fr;
+  }
 }
 
-.filter__text {
-  text-transform: capitalize;
-  /* margin: 0 1rem; */
-  padding: 0 2rem;
-  border-right: .1rem solid var(--blackColor);
-}
+@media screen and (max-width: 500px) {
 
-.filter__text:first-child {
-  color: purple;
-}
+  .highlight {
+    height: 16rem;
+    padding: 0 1.5rem;
+  }
 
-.filter__input:checked ~ .filter__text {
-  color: var(--redColor);
-  font-weight: 700;
+  .highlight__title {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .highlight__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .highlight__img {
+    width: 11rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
+  .highlight__btn {
+    padding: .8rem 1.2rem;
+    padding-right: 4rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

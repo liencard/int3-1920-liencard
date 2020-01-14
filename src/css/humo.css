@@ -1378,10 +1378,10 @@ em, i {
     position: relative;
     width: auto; }
 
-.container {
+/* .container {
   margin: 0 auto;
   padding: 0 4px;
-  width: 1016px; }
+  width: 1016px; } */
 
 /*
  * tablet hack

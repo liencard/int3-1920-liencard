@@ -57,6 +57,16 @@ class ProductDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
+  public function selectImagesById($id){
+    $sql = "SELECT * FROM `products`
+        INNER JOIN `product_images` ON `products`.`id` = `product_images`.`product_id`
+		    WHERE `products`.`id` = :id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id',$id);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
 
 
 
