@@ -20,10 +20,10 @@
   font-size: 2.4rem;
 }
 
-.book__author {
+.book__subtitle {
   font-size: 1.8rem;
   color: var(--gray3Color);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .book__wrapper--mini {
@@ -45,7 +45,11 @@
   font-size: 1.4rem;
 }
 
-.book-type label {
+.form__option input {
+  display: none;
+}
+
+.options__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
@@ -53,23 +57,19 @@
   margin-bottom: 3rem;
 }
 
-.book-type input {
-  display: none;
-}
-
-.booktype__wrapper {
+.option__wrapper {
   display: flex;
   flex-direction: column;
   border: .05rem solid var(--blackColor);
   padding: 1rem;
 }
 
-.booktype__wrapper span:first-child {
+.option__wrapper span:first-child {
   font-weight: 700;
 }
 
-.booktype__wrapper:active {
-  border: .05rem solid var(--redColor);
+.option__input:checked ~ .option__wrapper {
+  border: .15rem solid var(--redColor);
 }
 
 .order__btn {

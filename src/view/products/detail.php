@@ -5,7 +5,7 @@
 
 <div class="book__info">
   <h2 class="book__title"><?php echo $product['title']; ?></h2>
-  <p class="book__author"><?php echo $product['subtitle']; ?><p>
+  <p class="book__subtitle"><?php echo $product['subtitle']; ?><p>
 
   <div class="book__wrapper--mini">
     <p class="book__lang">Nederlands</p>
@@ -14,24 +14,21 @@
 
   <p class="book__description"><?php echo $product['description']; ?></p>
 
-  <form action="index.php" method="get" class="book-type">
-    <label for="booktype">
-      <input class="filter__input" type="radio" id="booktype" name="filter" value="hardcover">
-      <div class="booktype__wrapper">
-        <span>Hardcover</span>
-        <span>€12,99</span>
-      </div>
-
-      <input class="filter__input" type="radio" id="booktype" name="filter" value="ebook">
-      <div class="booktype__wrapper">
-        <span>E-book</span>
-        <span>€1,99</span>
-      </div>
-    </label>
+  <form action="index.php" method="get" class="form__option">
+    <div class="options__wrapper">
+      <?php foreach($options as $option): ?>
+        <label>
+          <input class="option__input" type="radio" id="option" name="option" value="<?php echo $option['id'] ?>">
+          <div class="option__wrapper">
+            <span><?php echo $option['name'] ?></span>
+            <span>€<?php echo $option['price'] ?></span>
+          </div>
+        </label>
+      <?php endforeach; ?>
+    </div>
   </form>
 
   <a class="btn order__btn" href="index.php?page=detail&id=<?php echo $product['id']; ?>" >+ <img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"> Toevoegen aan winkelmandje</a>
-
 
   <div class="buy__info">
     <p>Voor <span class="bold">18:00</span> besteld, <span class="bold">volgende dag</span> geleverd</p>

@@ -6,18 +6,31 @@
   <h2 class="hidden">Filter</h2>
   <p>14 results</p>
 
-  <form action="index.php" method="get" class="filter-form">
-      <label for="all">
-        <input class="filter__input" type="radio" id="all>" name="type" value="all">
-        <span>alles</span>
-        <?php foreach($types as $type): ?>
-          <input class="filter__input" type="radio" id="all>" name="type" value="<?php echo $type['type']?>">
-          <span><?php echo $type['type']?></span>
-        <?php endforeach; ?>
+  <!-- <form action="index.php" method="get" class="filter__form">
+    <label for="all">
+      <input class="filter__input" type="radio" id="all>" name="type" value="all">
+      <span>alles</span>
+      <?php foreach($types as $type): ?>
+        <input class="filter__input" type="radio" id="all>" name="type" value="<?php echo $type['type']?>">
+        <span><?php echo $type['type']?></span>
+      <?php endforeach; ?>
+    </label>
+    <input type="submit" class="filter__submit" value="filter">
+  </form> -->
+
+  <form action="index.php" method="get" class="filter__form">
+    <label class="xx">
+      <input type="radio" class="filter__input" name="type" value="all">
+      <span class="filter__text">alles</span>
+    </label>
+    <?php foreach($types as $type): ?>
+      <label class="xx">
+        <input type="radio" class="filter__input" name="type" value="<?php echo $type['type'] ?>">
+        <span class="filter__text"><?php echo $type['type'] ?></span>
       </label>
-      <!-- voeg radiobuttons toe voor elke alignment -->
-      <input type="submit" class="filter__submit" value="filter">
-    </form>
+    <?php endforeach; ?>
+    <input type="submit" class="filter__submit" value="filter">
+  </form>
 
   <select name="type" id="type" class="filter-type">
     <option value="all">-- Alles --</option>

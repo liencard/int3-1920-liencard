@@ -117,3 +117,25 @@
   color: var(--whiteColor);
   padding: .5rem 1rem;
 }
+
+/* Filter */
+
+.filter__input {
+  display: none;
+}
+
+.filter__text {
+  text-transform: capitalize;
+  /* margin: 0 1rem; */
+  padding: 0 2rem;
+  border-right: .1rem solid var(--blackColor);
+}
+
+.filter__text:first-child {
+  color: purple;
+}
+
+.filter__input:checked ~ .filter__text {
+  color: var(--redColor);
+  font-weight: 700;
+}
