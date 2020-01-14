@@ -49,9 +49,16 @@
   padding: 1rem 1.5rem;
   border-radius: 2px;
   display: inline-block;
+  padding-right: 4rem;
 
   &::after {
+    content: '';
+    position: absolute;
     background-image: url(../assets/img/arrow-red.svg);
+    height: 2rem;
+    width: 2rem;
+    background-repeat: no-repeat;
+    transform: translate(1rem, .7rem);
   }
 }
 

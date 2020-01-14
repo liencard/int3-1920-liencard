@@ -12,8 +12,16 @@ class ProductsController extends Controller {
   }
 
   public function index() {
-    $products = $this->productDAO->selectAllProducts();
+
+    if(empty($_GET['type']) || $_GET['type'] === 'all'){
+      $products = $this->productDAO->selectAllProducts();
+    }else{
+      $products = $this->productDAO->selectProductByType($_GET['type']);
+    }
+
+    // $products = $this->productDAO->selectAllProducts();
     $this->set('products', $products);
+    $this->set('types',$this->productDAO->selectTypes());
   }
 
   public function detail() {

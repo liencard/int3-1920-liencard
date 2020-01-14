@@ -5,7 +5,7 @@
 
 <div class="book__info">
   <h2 class="book__title"><?php echo $product['title']; ?></h2>
-  <p class="book__author"><?php echo $product['author']; ?><p>
+  <p class="book__author"><?php echo $product['subtitle']; ?><p>
 
   <div class="book__wrapper--mini">
     <p class="book__lang">Nederlands</p>

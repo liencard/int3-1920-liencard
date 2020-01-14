@@ -27,6 +27,26 @@ class ProductDAO extends DAO {
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
+  public function selectProductByType($type){
+    $sql = "
+    SELECT `products`.*, MIN(`product_images`.`image`) AS `image` FROM `products`
+    RIGHT JOIN `product_images` ON `products`.`id` = `product_images`.`product_id`
+    WHERE `type` = :type
+    GROUP BY `products`.`id`";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':type', $type);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
+  // SELECTEERT BOEK & EXTRA
+  public function selectTypes(){
+    $sql = "SELECT DISTINCT `type` FROM `products` ORDER BY `type`";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
   public function delete($id){
     $sql = "DELETE FROM `todos` WHERE `id` = :id";
     $stmt = $this->pdo->prepare($sql);
