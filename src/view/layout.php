@@ -32,7 +32,7 @@
       <nav class="primary-nav" role="navigation">
         <div class="container">
             <ul class="primary-nav__list">
-                <li class="primary-nav__list-item"> <a href="/" data-gtm="main-nav/homepage/text" class="primary-nav__link active">Home</a> </li>
+                <li class="primary-nav__list-item"> <a href="/" data-gtm="main-nav/homepage/text" class="primary-nav__link">Home</a> </li>
                 <li class="primary-nav__list-item"> <a href="/actua" data-gtm="main-nav/actua/text" class="primary-nav__link">Actua</a> </li>
                 <li class="primary-nav__list-item"> <a href="/humor" data-gtm="main-nav/humor/text" class="primary-nav__link">Humor</a> </li>
                 <li class="identity">
@@ -47,9 +47,10 @@
                 </li>
                 <li class="primary-nav__list-item"> <a href="/tv-en-film" data-gtm="main-nav/tvfilm/text" class="primary-nav__link">Tv/Film</a> </li>
                 <li class="primary-nav__list-item"> <a href="/muziek" data-gtm="main-nav/muziek/text" class="primary-nav__link">Muziek</a> </li>
-                <li class="primary-nav__list-item"> <a href="/boeken" data-gtm="main-nav/muziek/text" class="primary-nav__link">Webshop</a> </li>
-                <li class="search-trigger">
-                    <label for="search-sub-nav" class="search-trigger__label"> <i class="icon-search" data-gtm="header/search/image"></i> </label>
+                <li class="primary-nav__list-item"> <a href="/boeken" data-gtm="main-nav/muziek/text" class="primary-nav__link active">Shop</a> </li>
+                <li class="cart-icon">
+                    <!-- <label for="search-sub-nav" class="search-trigger__label"> <i class="icon-search" data-gtm="header/search/image"></i> </label> -->
+                  <a class="" href="index.php?page=cart" ><img srcset="./assets/img/cart-black.svg" sizes="16px" src="./assets/img/cart-black.svg" alt="cart vector"></a>
                 </li>
             </ul>
           </div>

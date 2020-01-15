@@ -1,0 +1,6 @@
+@font-face {
+  font-family: Swiss;
+  src: url(./../assets/fonts/swiss/swiss-blackcondensed.woff2) format('woff2'), url(./../assets/fonts/swiss/swiss-blackcondensed.woff) format('woff');
+  font-style: bold;
+  font-weight: 700;
+};
