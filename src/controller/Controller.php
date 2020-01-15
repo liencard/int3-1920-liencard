@@ -7,6 +7,11 @@ class Controller {
   protected $env = 'development';
 
   public function filter() {
+
+    if(!isset($_SESSION['cart'])) {
+      $_SESSION['cart'] = array();
+    }
+
     if (basename(dirname(dirname(__FILE__))) != 'src') {
       $this->env = 'production';
     }
@@ -30,6 +35,13 @@ class Controller {
     if (!empty($_SESSION['error'])) {
       unset($_SESSION['error']);
     }
+
+    $numItems = 0;
+    foreach ($_SESSION['cart'] as $productId => $info) {
+      $numItems += $info['option'];
+    }
+    $this->set('numItems', $numItems);
+
   }
 
   public function set($variableName, $value) {

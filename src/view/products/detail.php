@@ -14,12 +14,13 @@
 
     <p class="book__description"><?php echo $product['description']; ?></p>
 
-    <form action="index.php" method="get" class="form__option">
+    <form action="index.php?page=cart" method="post" class="form__option">
+      <input type="hidden" name="product_id" value="<?php echo $product['id'];?>" />
       <div class="options__wrapper">
         <?php foreach($options as $option): ?>
           <?php if ($option['name'] != 'No option'): ?>
             <label>
-              <input class="option__input" type="radio" name="option" value="<?php echo $option['id'] ?>">
+              <input class="option__input" type="radio" name="option_id" value="<?php echo $option['id'] ?>">
               <div class="option__wrapper">
                 <span><?php echo $option['name'] ?></span>
                 <span>€<?php echo $option['price'] ?></span>
@@ -28,9 +29,17 @@
           <?php endif; ?>
         <?php endforeach; ?>
       </div>
+
+      <button class="btn order__btn" type="submit" name="action" value="add">
+        +<img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"> Toevoegen aan winkelmandje
+      </button>
     </form>
 
-    <a class="btn order__btn" href="index.php?page=detail&id=<?php echo $product['id']; ?>" >+ <img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"> Toevoegen aan winkelmandje</a>
+
+
+    <!-- <a class="btn order__btn" href="index.php?page=detail&id=<?php echo $product['id']; ?>" >+
+      <img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"> Toevoegen aan winkelmandje
+    </a> -->
 
     <div class="buy__info">
       <p>Voor <span class="bold">18:00</span> besteld, <span class="bold">volgende dag</span> geleverd</p>
@@ -42,7 +51,7 @@
 
   <div class="image__wrapper">
     <div id="product-image">
-      <img class="book__img" srcset="<?php echo $product['image']; ?>" sizes="15px" src="<?php echo $product['image']; ?>" alt="boekcover The Road">
+      <img class="book__img" srcset="<?php echo $product['tumbnail']; ?>" sizes="15px" src="<?php echo $product['tumbnail']; ?>" alt="boekcover The Road">
     </div>
 
     <ul class="images__viewer">

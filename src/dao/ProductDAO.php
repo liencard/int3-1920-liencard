@@ -14,12 +14,27 @@ class ProductDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
+  // public function selectProductById($id) {
+  //   $sql = "
+  //     SELECT `products`.*, MIN(`product_images`.`image`) AS `image` FROM `products`
+  //     RIGHT JOIN `product_images` ON `products`.`id` = `product_images`.`product_id`
+  //     WHERE `products`.`id` = :id
+  //     GROUP BY `products`.`id`
+  //   ";
+  //   $stmt = $this->pdo->prepare($sql);
+  //   $stmt->bindValue(':id', $id);
+  //   $stmt->execute();
+  //   return $stmt->fetch(PDO::FETCH_ASSOC);
+  // }
+
   public function selectProductById($id) {
     $sql = "
-      SELECT `products`.*, MIN(`product_images`.`image`) AS `image` FROM `products`
+      SELECT `products`.*, `options`.`name`, `product_options`.`name`, `product_options`.`price`
+	    FROM `products`
       RIGHT JOIN `product_images` ON `products`.`id` = `product_images`.`product_id`
+      LEFT JOIN `options` ON `products`.`option_id` = `options`.`id`
+      LEFT JOIN `product_options` ON `product_options`.`option_id` = `options`.`id`
       WHERE `products`.`id` = :id
-      GROUP BY `products`.`id`
     ";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':id', $id);

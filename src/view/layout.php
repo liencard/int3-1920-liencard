@@ -8,6 +8,7 @@
     <?php /* NEW */ ?>
     <?php echo $css;?>
   </head>
+
   <body>
 
   <header>
@@ -47,7 +48,7 @@
                 </li>
                 <li class="primary-nav__list-item"> <a href="/tv-en-film" data-gtm="main-nav/tvfilm/text" class="primary-nav__link">Tv/Film</a> </li>
                 <li class="primary-nav__list-item"> <a href="/muziek" data-gtm="main-nav/muziek/text" class="primary-nav__link">Muziek</a> </li>
-                <li class="primary-nav__list-item"> <a href="/boeken" data-gtm="main-nav/muziek/text" class="primary-nav__link active">Shop</a> </li>
+                <li class="primary-nav__list-item"> <a href="index.php" data-gtm="main-nav/muziek/text" class="primary-nav__link active">Shop</a> </li>
                 <li class="cart-icon">
                     <!-- <label for="search-sub-nav" class="search-trigger__label"> <i class="icon-search" data-gtm="header/search/image"></i> </label> -->
                   <a class="" href="index.php?page=cart" ><img srcset="./assets/img/cart-black.svg" sizes="16px" src="./assets/img/cart-black.svg" alt="cart vector"></a>
@@ -55,7 +56,7 @@
             </ul>
           </div>
         </nav>
-    <header>
+    </header>
 
     <main>
       <?php
