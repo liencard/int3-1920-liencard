@@ -15,6 +15,7 @@
   --layoutBorderRadius: 3rem;
   /* font */
   --font: news-gothic-std, sans-serif;
+  --fontTitle: Swiss, sans-serif;
   --fontWeightLight: 300;
   --fontWeightRegular: 400;
   --fontWeightSemiBold: 600;

@@ -23,6 +23,18 @@ $routes = array(
   'cart' => array(
     'controller' => 'Orders',
     'action' => 'cart'
+  ),
+  'checkout' => array(
+    'controller' => 'Orders',
+    'action' => 'checkout'
+  ),
+  'payment' => array(
+    'controller' => 'Orders',
+    'action' => 'payment'
+  ),
+  'confirmation' => array(
+    'controller' => 'Orders',
+    'action' => 'confirmation'
   )
 );
 

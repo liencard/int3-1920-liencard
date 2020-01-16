@@ -1,4 +1,5 @@
 require('./style.css');
+require('./js/validate.js');
 
 {
   const handleClickImage = e => {

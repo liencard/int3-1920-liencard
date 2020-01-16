@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/hkm4jaz.css">
-    <title>HUMO</title>
+    <title>HUMO - <?php echo $title;?></title>
     <?php echo $css;?>
   </head>
 

@@ -40,6 +40,7 @@ class OrdersController extends Controller {
       header('Location: index.php?page=cart');
       exit();
     }
+    $this->set('title', 'Cart');
   }
 
   // TOEVOEGEN
@@ -85,5 +86,63 @@ class OrdersController extends Controller {
     }
   }
 
+  // CHECKOUT  - STAP 1
+  public function checkout() {
+    if(!empty($_POST['action'])){
+      if (!empty($_POST['action'])){
+        if ($_POST['action'] == 'insertCheckout'){
+          $insertedCheckout = $this->_handleCheckoutOrder();
+           if(!$insertedCheckout){
+              $errors = $this->orderDAO->validateCheckout($_POST);
+              $this->set('errors',$errors);
+        } else {
+        $_SESSION['info'] = 'Bedankt voor je bestelling!';
+        header('location: index.php?page=checkout');
+        exit();
+        }
+      }
+    }
+
+    }
+    $this->set('title', 'Checkout');
+  }
+
+  // CHECKOUT  - STAP 2
+  private function _handleCheckoutOrder(){
+    $data = $_POST;
+    if($gegevensId = $this->orderDAO->insertGegevens($data)){
+      $this->_handleCheckout($gegevensId);
+    }
+    exit();
+  }
+
+  // CHECKOUT  - STAP 3
+  private function _handleCheckout($gegevensId) {
+    $data = array();
+    if(!empty($_SESSION['cart'])){
+      foreach ($_SESSION['cart'] as $productId => $quantity) {
+        array_push($data, array(
+          'order_id' => $gegevensId['id'],
+          'product_id' => $productId,
+          'quantity' => $quantity['quantity']
+        ));
+      }
+      foreach($data as $order){
+        $this->orderDAO->insertOrder($order);
+      }
+        header('Location: index.php?page=payment');
+        exit();
+        }
+  }
+
+  public function payment() {
+
+    $this->set('title', 'payment');
+  }
+
+  public function confirmation() {
+
+    $this->set('title', 'confirmation');
+  }
 
 }

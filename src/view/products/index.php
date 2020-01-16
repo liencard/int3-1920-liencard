@@ -27,7 +27,6 @@
 
 </section>
 
-
 <!-- HIGHLIGHTS -->
 <section class="highlights">
   <h2 class="hidden">Highlight</h2>
@@ -44,10 +43,9 @@
       <h3 class="highlight__title">Lees geen <br> andere onzin,<br> <span class="color--red">abonneer je nu!<span></h3>
       <a class="highlight__btn" href="index.php?page=detail&id=15">Bekijk aanbod</a>
     </div>
-    <img class="highlight__img" srcset="./assets/img/the-road-1.jpg" sizes="15px" src="./assets/img/the-road-1.jpg" alt="boekcover The Road">
+    <img class="highlight__img" srcset="./assets/img/abbo-1.jpg" sizes="15px" src="./assets/img/abbo-1.jpg" alt="boekcover The Road">
   </article>
 </section>
-
 
 <!-- PRODUCTS -->
 <section class="products">

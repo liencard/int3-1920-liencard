@@ -28,9 +28,11 @@ a:hover {
 }
 
 @-webkit-keyframes seconds {
+
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     left: -9999px;
@@ -39,9 +41,11 @@ a:hover {
 }
 
 @keyframes seconds {
+
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     left: -9999px;
@@ -54,5 +58,5 @@ a:hover {
 }
 
 .error {
-  background-color: var(--redColor);
+  color: var(--redColor);
 }
