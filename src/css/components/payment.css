@@ -1,0 +1,54 @@
+.method__title {
+  margin-bottom: 2rem;
+}
+
+.payment__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.payment__border {
+  box-shadow: 0px 2px 10px #e5e5e5;
+  border-radius: 7px;
+  padding: 2rem;
+  height: 12.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment__input:checked ~ .payment__border {
+  border: .1rem solid var(--redColor);
+}
+
+.payment__input {
+  display: none;
+}
+
+.payment__img {
+  width: 10rem;
+}
+
+.button__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.btn__payment {
+  margin-top: 3rem;
+}
+
+.btn__payment--text {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 500px) {
+
+  .method {
+    width: 30vw;
+    margin: 0 auto;
+  }
+
+}

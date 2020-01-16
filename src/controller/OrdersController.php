@@ -137,12 +137,12 @@ class OrdersController extends Controller {
 
   public function payment() {
 
-    $this->set('title', 'payment');
+    $this->set('title', 'Payment');
   }
 
   public function confirmation() {
 
-    $this->set('title', 'confirmation');
+    $this->set('title', 'Confirmation');
   }
 
 }
