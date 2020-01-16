@@ -27,6 +27,13 @@ class Controller {
       $this->set('js', '<script src="script.js"></script>'); // regular script
       $this->set('css', '<link href="style.css" rel="stylesheet">'); // regular css tag
     }
+
+    $numItems = 0;
+    foreach ($_SESSION['cart'] as $productId => $info) {
+      $numItems += $info['quantity'];
+    }
+    $this->set('numItems', $numItems);
+
     $this->createViewVarWithContent();
     $this->renderInLayout();
     if (!empty($_SESSION['info'])) {
@@ -35,13 +42,6 @@ class Controller {
     if (!empty($_SESSION['error'])) {
       unset($_SESSION['error']);
     }
-
-    $numItems = 0;
-    foreach ($_SESSION['cart'] as $productId => $info) {
-      $numItems += $info['option'];
-    }
-    $this->set('numItems', $numItems);
-
   }
 
   public function set($variableName, $value) {

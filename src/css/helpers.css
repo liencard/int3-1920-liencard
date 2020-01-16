@@ -1,0 +1,58 @@
+.hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+a:hover {
+  border: none;
+}
+
+.box {
+  font-weight: 700;
+  text-align: center;
+  padding: .5rem 1rem;
+  width: 40vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+  position: relative;
+
+  -webkit-animation: seconds 1s forwards;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 1s;
+  animation: seconds 1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+    position: absolute;
+  }
+}
+
+@keyframes seconds {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: -9999px;
+    position: absolute;
+  }
+}
+
+.info {
+  background-color: var(--yellowColor);
+}
+
+.error {
+  background-color: var(--redColor);
+}

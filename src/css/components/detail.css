@@ -49,7 +49,7 @@
   font-size: 1.4rem;
 }
 
-.form__option input {
+.option__input {
   display: none;
 }
 
@@ -74,6 +74,13 @@
 
 .option__input:checked ~ .option__wrapper {
   border: .15rem solid var(--redColor);
+}
+
+.product__quantity {
+  width: 6rem;
+  height: 4rem;
+  border-color: var(--redColor);
+  text-align: center;
 }
 
 .order__btn {

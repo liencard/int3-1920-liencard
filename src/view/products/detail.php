@@ -30,6 +30,8 @@
         <?php endforeach; ?>
       </div>
 
+      <input class="product__quantity" type="number" name="quantity" value="1" min="1">
+
       <button class="btn order__btn" type="submit" name="action" value="add">
         +<img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"> Toevoegen aan winkelmandje
       </button>

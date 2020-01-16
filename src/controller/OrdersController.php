@@ -51,16 +51,37 @@ class OrdersController extends Controller {
       }
       $_SESSION['cart'][$_POST['product_id']] = array(
         'product' => $product,
-        'option' => $_POST['option_id']
+        'option' => $_POST['option_id'],
+        'quantity' => $_POST['quantity']
       );
     }
-    $_SESSION['cart'][$_POST['product_id']]['option_id'];
+    // $_SESSION['cart'][$_POST['product_id']]['option_id'];
+    $_SESSION['cart'][$_POST['product_id']]['quantity']++;
   }
 
   // VERWIJDEREN
   private function _handleRemove() {
     if (isset($_SESSION['cart'][$_POST['remove']])) {
       unset($_SESSION['cart'][$_POST['remove']]);
+    }
+  }
+
+  // UPDATE QUANTITY
+  private function _handleUpdate() {
+    foreach ($_POST['quantity'] as $productId => $quantity) {
+      if (!empty($_SESSION['cart'][$productId])) {
+        $_SESSION['cart'][$productId]['quantity'] = $quantity;
+      }
+    }
+    $this->_removeWhereQuantityIsZero();
+  }
+
+  // DELETE WNR 0 QUANTITY
+  private function _removeWhereQuantityIsZero() {
+    foreach($_SESSION['cart'] as $productId => $info) {
+      if ($info['quantity'] <= 0) {
+        unset($_SESSION['cart'][$productId]);
+      }
     }
   }
 
