@@ -62,7 +62,7 @@
 /* ALGEMEEN */
 
 .part {
-  margin: 0 2rem;
+  padding: 0 2rem;
 }
 
 .part__title {
@@ -71,6 +71,7 @@
   line-height: 5rem;
   letter-spacing: .5rem;
   margin-bottom: 4rem;
+  font-weight: 400;
 }
 
 .part__text {
@@ -132,9 +133,9 @@
   font-size: 8rem;
   line-height: 7.5rem;
   word-break: break-all;
-  /* background: -webkit-linear-gradient(black, white);
+  background: -webkit-linear-gradient(black, white);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
   padding: 2rem;
 }
 
@@ -143,7 +144,142 @@
   padding-bottom: 10rem;
 }
 
+.morality__img {
+  width: 95vw;
+}
+
+/* GOODBAD */
+
+.goodbad {
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+
+  /* &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../../assets/beelden/bg-paint-mobile.png);
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 80vw;
+    margin-top: -5rem;
+  } */
+}
+
+.goodbad__title {
+  margin-bottom: 8rem;
+}
+
+.struggle {
+  background-color: white;
+  color: black;
+  padding-bottom: 10rem;
+}
+
+.awards {
+  padding: 10rem 2rem;
+}
+
+.awards__wrapper {
+  margin-top: 10rem;
+}
+
+.awards__wrapper p {
+  margin-bottom: 8rem;
+}
+
+.award_07::before {
+  content: '';
+  position: absolute;
+  background-image: url(../../assets/beelden/2007.png);
+  background-repeat: no-repeat;
+  width: 19rem;
+  height: 6rem;
+  margin-top: -2rem;
+}
+
+.award_08 {
+  text-align: right;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../../assets/beelden/2008.png);
+    background-repeat: no-repeat;
+    width: 19rem;
+    height: 6rem;
+    margin-top: -2rem;
+    background-position: top right;
+  }
+}
+
+.awards__subtitle {
+  font-family: var(--fontTitleLongread);
+  font-size: 4rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.awards__list {
+  list-style: circle;
+  margin-left: 3rem;
+}
+
+.award__item {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.item__image::after {
+  content: '';
+  position: absolute;
+  background-image: url(../../assets/beelden/2019.png);
+  background-repeat: no-repeat;
+  width: 30rem;
+  height: 10rem;
+}
+
+.marker__img {
+  width: 95vw;
+  margin-top: 10rem;
+}
+
+.promo {
+  margin-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+.promo__img-wrapper {
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+}
+
+.button__img-wrapper {
+  margin: 0 auto;
+}
+
+.promo__img {
+  width: 95vw;
+}
+
+.footer__text {
+  font-family: var(--fontTitleLongread);
+  font-size: 2rem;
+  padding-bottom: 5rem;
+  text-align: right;
+}
+
 @media screen and (min-width: 1100px) {
+
+  .header__image {
+    width: 99vw;
+  }
 
   .quote {
     font-size: 17rem;
@@ -206,7 +342,6 @@
     grid-template-areas: 'clock clock-text';
     margin-right: 14rem;
     margin-top: 20rem;
-
   }
 
   .clock__wrapper {
@@ -214,13 +349,11 @@
   }
 
   .clock__title {
-    /* grid-area: clock-title; */
     margin-top: 0;
     margin-bottom: 7rem;
   }
 
   .clock-text__wrapper {
-    /* grid-area: clock-text; */
     font-size: 2.6rem;
     line-height: 3.4rem;
     width: 45vw;
@@ -243,12 +376,94 @@
   }
 
   .title__morality-quote {
-    font-family: var(--fontTitleLongread);
-    font-size: 17rem;
+    font-size: 15rem;
     line-height: 12rem;
-    background: none;
-    color: white;
-
+    word-break: normal;
   }
 
+  .morality {
+    margin-top: 20rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 7.5rem;
+    grid-template-areas: 'title-morality text-morality'
+      'img-morality text-morality';
+    margin-right: 14rem;
+  }
+
+  .morality__title {
+    grid-area: title-morality;
+    text-align: right;
+  }
+
+  .morality-text__wrapper {
+    grid-area: text-morality;
+  }
+
+  .morality__img-wrapper {
+    margin-top: -10rem;
+  }
+
+  .morality__img {
+    width: 50vw;
+  }
+
+  .awards {
+    padding: 20rem 14rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 7.5rem;
+    grid-template-areas: 'title-awards text-awards'
+      'img-awards text-awards';
+  }
+
+  .awards__title {
+    grid-area: title-awards;
+  }
+
+  .awards__wrapper {
+    grid-area: text-awards;
+  }
+
+  .awards__text-wrapper {
+    grid-area: text-awards;
+  }
+
+  .marker__img {
+    grid-area: img-awards;
+    width: 30vw;
+    margin-top: 0;
+  }
+
+  .promo {
+    padding: 10rem 14rem;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-gap: 5rem;
+    grid-template-areas: 'promo-img promo-text';
+  }
+
+  .promo__wrapper {
+    grid-area: promo-text;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .promo__title {
+    margin-bottom: 8rem;
+  }
+
+  .promo__img-wrapper {
+    grid-area: promo-img;
+  }
+
+  .promo__img {
+    width: 35vw;
+  }
+
+  .button_img {
+    width: 15vw;
+  }
 }
