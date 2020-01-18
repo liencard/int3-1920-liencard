@@ -31,7 +31,7 @@
 .quote {
   font-family: var(--fontTitleLongread);
   font-size: 13rem;
-  line-height: 9rem;
+  line-height: 9.5rem;
   letter-spacing: .05rem;
   text-align: center;
 }
@@ -42,17 +42,17 @@
   align-items: center;
   justify-content: center;
 
-  background-image: url(../../assets/beelden/texture-question.png);
+  /* background-image: url(../../assets/beelden/texture-question.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
-  height: 60vh;
+  height: 60vh; */
 }
 
 .quote__two {
   margin: 25rem 0;
-/*
-  background-image: url(../../assets/beelden/texture-mobile.png);
+
+  /* background-image: url(../../assets/beelden/texture-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 100vw;
@@ -69,7 +69,7 @@
   font-family: var(--fontTitleLongread);
   font-size: 6rem;
   line-height: 5rem;
-  /* letter-spacing: .05rem; */
+  letter-spacing: .5rem;
   margin-bottom: 4rem;
 }
 
@@ -115,7 +115,32 @@
 }
 
 .clock__title {
-  margin-top: -14rem;
+  margin-top: -16rem;
+}
+
+/* MORALITY */
+
+.morality-quote {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title__morality-quote {
+  text-align: center;
+  font-size: 8rem;
+  line-height: 7.5rem;
+  word-break: break-all;
+  /* background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  padding: 2rem;
+}
+
+.morality {
+  margin-top: 7rem;
+  padding-bottom: 10rem;
 }
 
 @media screen and (min-width: 1100px) {
@@ -140,6 +165,90 @@
     margin: 0 auto;
     padding: 30rem 0;
     width: 40vw;
+  }
+
+  .part__title {
+    font-size: 10rem;
+    line-height: 8.5rem;
+  }
+
+  .intro {
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 7.5rem;
+    grid-template-areas: 'title text'
+      'img text';
+    margin: 0 14rem;
+    margin-top: 20rem;
+  }
+
+  .intro__title {
+    grid-area: title;
+    text-align: right;
+  }
+
+  .intro-text__wrapper {
+    grid-area: text;
+  }
+
+  .intro__img-wrapper {
+    grid-area: img;
+  }
+
+  .intro__img {
+    width: 45vw;
+    margin-right: -10rem;
+  }
+
+  .clock {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2rem;
+    grid-template-areas: 'clock clock-text';
+    margin-right: 14rem;
+    margin-top: 20rem;
+
+  }
+
+  .clock__wrapper {
+    grid-area: clock-text;
+  }
+
+  .clock__title {
+    /* grid-area: clock-title; */
+    margin-top: 0;
+    margin-bottom: 7rem;
+  }
+
+  .clock-text__wrapper {
+    /* grid-area: clock-text; */
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    width: 45vw;
+    padding-left: 5rem;
+  }
+
+  .clock-text__wrapper .text__highlight {
+    font-size: 3.6rem;
+  }
+
+  .clock__img {
+    grid-area: clock;
+    width: 35vw;
+    grid-row: span 2;
+  }
+
+  .morality-quote {
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .title__morality-quote {
+    font-family: var(--fontTitleLongread);
+    font-size: 17rem;
+    line-height: 12rem;
+    background: none;
+    color: white;
+
   }
 
 }

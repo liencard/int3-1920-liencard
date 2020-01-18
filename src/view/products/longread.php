@@ -28,7 +28,7 @@
   </section>
 
   <section class="part intro">
-    <h2 class="part__title">Lorum Ipsum</h2>
+    <h2 class="part__title intro__title">Lorum Ipsum</h2>
     <div class="intro-text__wrapper">
       <p class="part__text">Volg het verhaal van een vader en zoon, die in een <span class="text__highlight">post-apocalyptische wereld</span>, een tocht afleggen naar het zuiden. In hoop de winter zo te kunnen ontsnappen en te overleven.<p>
       <p class="part__text"><span class="text__highlight">De wereld is volledig vergaan:</span> bijna alle dieren planten zijn uitgestorven, de lucht zit vol met as en de aarde is volledig verbrand en onvruchtbaar. ’s Nachts is het er koud, koud genoeg om stenen te breken en wanneer er sneeuw valt is het grijs.<p>
@@ -45,21 +45,24 @@
   </section>
 
   <section class="part clock">
-    <h2 class="part__title clock__title">Om 1:17 <br> bleven de klokken stilstaan.</h2>
-    <div class="clock-text__wrapper">
-      <p class="part__text">Gevolgd door<span class="text__highlight">“een lange zeis van licht en vervolgens een reeks van diepe schokken”.</span><p>
-      <p class="part__text">Dit was het begin van het einde van de wereld. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis eleifend justo, id varius elit fringilla eget<p>
+    <div class="clock__wrapper">
+      <h2 class="part__title clock__title">Om 1:17 <br> bleven de klokken stilstaan.</h2>
+      <div class="clock-text__wrapper">
+        <p class="part__text">Gevolgd door<span class="text__highlight">“een lange zeis van licht en vervolgens een reeks van diepe schokken”.</span><p>
+        <p class="part__text">Dit was het begin van het einde van de wereld. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis eleifend justo, id varius elit fringilla eget<p>
+      </div>
     </div>
     <div class="clock__img-wrapper">
       <img srcset="./assets/beelden/clock-mini.png 357w,
             ./assets/beelden/clock-big.png 579w"
-        sizes="66.66vw"
+        sizes="30vw"
         class="clock__img" src="./assets/beelden/clock-big.png" alt="Clock gif animatie">
     </div>
   </section>
 
-  <section class="part morality">
-    <h2 class="part__title">In een post  apocalyptische wereld, hoe behoud je je moraliteit?</h2>
+  <section class="part morality-quote">
+    <h2 class="part__title title__morality-quote">In een post  apocalyptische wereld, hoe behoud je je moraliteit?</h2>
+    <img class="arrow-down" srcset="./assets/beelden/arrow-down.png" sizes="15px" src="./assets/beelden/arrow-down.png" alt="White arrow brush">
   </section>
 
   <section class="part morality">
