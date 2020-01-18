@@ -1,6 +1,42 @@
 @font-face {
-  font-family: Swiss;
+  font-family: swiss;
   src: url(./../assets/fonts/swiss/swiss-blackcondensed.woff2) format('woff2'), url(./../assets/fonts/swiss/swiss-blackcondensed.woff) format('woff');
   font-style: bold;
   font-weight: 700;
-};
+}
+
+@font-face {
+  font-family: raleway;
+  src: url(./../assets/fonts/raleway/Raleway-Light.woff2) format('woff2'), url(./../assets/fonts/raleway/Raleway-Light.woff) format('woff');
+  font-style: light;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: raleway;
+  src: url(./../assets/fonts/raleway/Raleway-Regular.woff2) format('woff2'), url(./../assets/fonts/raleway/Raleway-Regular.woff) format('woff');
+  font-style: regular;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: raleway;
+  src: url(./../assets/fonts/raleway/Raleway-Bold.woff2) format('woff2'), url(./../assets/fonts/raleway/Raleway-Bold.woff) format('woff');
+  font-style: bold;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: lakeshore;
+  src: url(./../assets/fonts/lakeshore/Lakeshore-Regular.woff2) format('woff2'), url(./../assets/fonts/lakeshore/Lakeshore-Regular.woff) format('woff');
+  font-style: regular;
+  font-weight: 500;
+}
+
+/* @font-face {
+  font-family: lakeshore;
+  /* src: url(./fonts/Lakeshore-Regular.eot); IE9 Compat Modes
+  src: url(./../assets/fonts/lakeshore/Lakeshore-Regular.otf) format('opentype'), url(./../assets/fonts/lakeshore/Lakeshore-Regular.svg) format('svg'), url(./../assets/fonts/lakeshore/Lakeshore-Regular.ttf) format('truetype'), url(./../assets/fonts/lakeshore/Lakeshore-Regular.woff) format('woff'), url(./../assets/fonts/lakeshore/Lakeshore-Regular.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} */

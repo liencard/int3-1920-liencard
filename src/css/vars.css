@@ -15,7 +15,10 @@
   --layoutBorderRadius: 3rem;
   /* font */
   --font: news-gothic-std, sans-serif;
-  --fontTitle: Swiss, sans-serif;
+  --fontTitle: swiss, sans-serif;
+  --fontLongread: raleway, sans-serif;
+  --fontTitleLongread: lakeshore, sans-serif;
+  /* fontweight */
   --fontWeightLight: 300;
   --fontWeightRegular: 400;
   --fontWeightSemiBold: 600;

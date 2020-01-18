@@ -35,6 +35,10 @@ $routes = array(
   'confirmation' => array(
     'controller' => 'Orders',
     'action' => 'confirmation'
+  ),
+  'longread' => array(
+    'controller' => 'Products',
+    'action' => 'longread'
   )
 );
 

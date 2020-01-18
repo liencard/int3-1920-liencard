@@ -34,7 +34,8 @@
     <div class="highlight__wrapper">
       <h3 class="highlight__title">Promoboek <br> van de week</h3>
       <p class="highlight__subtitle">Vind je kortingscode op de flap <br> van HUMO deze week</p>
-      <a class="highlight__btn" href="index.php?page=detail&id=8">Meer info</a>
+      <!-- <a class="highlight__btn" href="index.php?page=detail&id=8">Meer info</a> -->
+      <a class="highlight__btn" href="index.php?page=longread">Meer info</a>
     </div>
     <img class="highlight__img" srcset="./assets/img/the-road-1.jpg" sizes="15px" src="./assets/img/the-road-1.jpg" alt="boekcover The Road">
   </article>

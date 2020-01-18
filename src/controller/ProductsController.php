@@ -22,6 +22,7 @@ class ProductsController extends Controller {
     // $products = $this->productDAO->selectAllProducts();
     $this->set('products', $products);
     $this->set('types',$this->productDAO->selectTypes());
+    $this->set('title', 'Overview');
   }
 
   public function detail() {
@@ -40,6 +41,12 @@ class ProductsController extends Controller {
     $this->set('product', $product);
     $this->set('options', $options);
     $this->set('images', $images);
+    $this->set('title', 'Detail');
+  }
+
+  public function longread() {
+
+    $this->set('title', 'Longread');
   }
 
 

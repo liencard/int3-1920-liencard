@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="<?php if ($_GET['page'] === 'longread'){ echo ' hidden'; }?>">
       <div class="container">
         <nav class="secondary-nav" role="navigation">
             <ul class="tertiary-nav" id="nav-login">
@@ -65,7 +65,7 @@
             echo '<div class="info box">' . $_SESSION['info'] . '</div>';
           }
         ?>
-        <div class="container">
+        <div class="<?php if ($_GET['page'] != 'longread'){ echo 'container'; }?>">
           <?php echo $content;?>
         </div>
       </main>
