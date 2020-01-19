@@ -2,6 +2,10 @@
   display: none;
 }
 
+.has-js .filter__submit {
+  display: none;
+}
+
 .bold {
   font-weight: 700;
 }

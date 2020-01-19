@@ -23,6 +23,11 @@ class ProductsController extends Controller {
     $this->set('products', $products);
     $this->set('types',$this->productDAO->selectTypes());
     $this->set('title', 'Overview');
+
+    if ($_SERVER['HTTP_ACCEPT'] == 'application/json') {
+      echo json_encode($products);
+      exit();
+    }
   }
 
   public function detail() {
