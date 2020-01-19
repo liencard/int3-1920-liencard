@@ -1,4 +1,5 @@
 require('./style.css');
+require('./js/scratch.js');
 require('./js/validate.js');
 
 {

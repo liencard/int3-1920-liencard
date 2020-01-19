@@ -65,70 +65,72 @@
     <img class="arrow-down" srcset="./assets/beelden/arrow-down.png" sizes="15px" src="./assets/beelden/arrow-down.png" alt="White arrow brush">
   </section>
 
-  <section class="part morality">
-    <h2 class="part__title morality__title">Ieder voor <br> zichzelf</h2>
-    <div class="morality-text__wrapper">
-      <p class="part__text">McCarthy beweert dat <span class="text__highlight">de samenleving de morele kompassen van de mensen dicteert.</span> Zonder deze maatschappelijke normen, zijn hun persoonlijke normen en moralen niet te onderscheiden van hun eigenbelang.<p>
-      <p class="part__text">In het boek zie je hoe, door de <span class="text__highlight">afwezigheid van de menselijke beschaving</span> en de sociale normen, iedereen uitsluitend <span class="text__highlight">handelt uit eigenbelang.</span> Iedereen is egoïstisch en gelooft steevast dat zijn of haar eigen daden correct en gerechtvaarigd zijn.<p>
-      <p class="part__text">De man kijkt alleen naar zijn zoon en zichzelf. Hierdoor, ziet hij al de andere overlevers als hun vijanden. Volgens hem zijn zij “de goede” en al de rest zijn “de slechte”.<p>
-    </div>
-    <div class="morality__img-wrapper">
-      <picture>
-        <!-- <source media="(max-width: 600px)" srcset="./assets/beelden/fallenworld-mobile.png 338w" /> -->
-        <source media="(min-width: 600px)" srcset="./assets/beelden/paint-spot.png 819w" />
-        <img src="assets/beelden/paint-spot.png" class="morality__img" alt="Paint spot with excerpt">
-      </picture>
-    </div>
-  </section>
-
-  <section class="part goodbad">
-    <h2 class="part__title goodbad__title">De goede <br> versus <br> de slechte</h2>
-    <p class="part__text">Volgens The Road, wat houd het in om een van de “goede” te zijn? In het boek is er één duidelijke regel wat de goede van de slechte onderscheid: <span class="text__highlight">De slechte eten mensen, de goede niet.</span><p>
-    <p class="part__text">Dit is echter niet het enige principe waaraan “de goede” moeten voldoen.<p>
-
-    <section class="principes__wrapper">
-      <h2 class="hidden">De 6 principes</h2>
-      <div class="part principes">
-
-        <!-- <div class="principe principe-leeg">
-          <span class="principe__number">0</span>
-          <p class="principe__title">Lege tekst blok</p>
-        </div> -->
-        <div class="principe">
-          <span class="principe__number">1</span>
-          <p class="principe__title">Eet geen mensen</p>
-        </div>
-         <div class="principe">
-          <span class="principe__number">2</span>
-          <p class="principe__title">Steel <br> niet</p>
-        </div>
-         <div class="principe">
-          <span class="principe__number">3</span>
-          <p class="principe__title">Lieg <br> niet</p>
-        </div>
-         <div class="principe">
-          <span class="principe__number">4</span>
-          <p class="principe__title">Houd je beloftes</p>
-        </div>
-         <div class="principe">
-          <span class="principe__number">5</span>
-          <p class="principe__title">Help elkaar</p>
-        </div>
-         <div class="principe">
-          <span class="principe__number">6</span>
-          <p class="principe__title">Geef <br> niet op</p>
-        </div>
-
+  <div class="scroll__wrapper">
+    <section class="part morality">
+      <h2 class="part__title morality__title">Ieder voor <br> zichzelf</h2>
+      <div class="morality-text__wrapper">
+        <p class="part__text">McCarthy beweert dat <span class="text__highlight">de samenleving de morele kompassen van de mensen dicteert.</span> Zonder deze maatschappelijke normen, zijn hun persoonlijke normen en moralen niet te onderscheiden van hun eigenbelang.<p>
+        <p class="part__text">In het boek zie je hoe, door de <span class="text__highlight">afwezigheid van de menselijke beschaving</span> en de sociale normen, iedereen uitsluitend <span class="text__highlight">handelt uit eigenbelang.</span> Iedereen is egoïstisch en gelooft steevast dat zijn of haar eigen daden correct en gerechtvaarigd zijn.<p>
+        <p class="part__text">De man kijkt alleen naar zijn zoon en zichzelf. Hierdoor, ziet hij al de andere overlevers als hun vijanden. Volgens hem zijn zij “de goede” en al de rest zijn “de slechte”.<p>
+      </div>
+      <div class="morality__img-wrapper">
+        <picture>
+          <!-- <source media="(max-width: 600px)" srcset="./assets/beelden/fallenworld-mobile.png 338w" /> -->
+          <source media="(min-width: 600px)" srcset="./assets/beelden/paint-spot.png 819w" />
+          <img src="assets/beelden/paint-spot.png" class="morality__img" alt="Paint spot with excerpt">
+        </picture>
       </div>
     </section>
-  </section>
 
-  <section class="part struggle">
-    <h2 class="part__title struggle__title">Innerlijk strijd</h2>
-    <p class="part__text">Doorheen het verhaal zie je de strijd van de man om één van “de goed” te blijven, om te doen wat goed is, in een wereld waarin de meeste mensen hun moralen volledig hebben achtergelaten.<p>
-    <p class="part__text">Nullam dictum turpis in maximus malesuada. Nam mollis, felis ut condimentum convallis, nisl diam tincidunt nibh, at semper tortor.<p>
-  </section>
+    <section class="part goodbad">
+      <h2 class="part__title goodbad__title">De goede <br> versus <br> de slechte</h2>
+      <p class="part__text">Volgens The Road, wat houd het in om een van de “goede” te zijn? In het boek is er één duidelijke regel wat de goede van de slechte onderscheid: <span class="text__highlight">De slechte eten mensen, de goede niet.</span><p>
+      <p class="part__text">Dit is echter niet het enige principe waaraan “de goede” moeten voldoen.<p>
+    </section>
 
+    <section class="part principes">
+        <h3 class="hidden">De 6 principes</h3>
+        <div class="principes__wrapper">
+          <div class="principe principe--one">
+            <span class="principe__number">1</span>
+            <p class="principe__title">Eet geen mensen</p>
+          </div>
+          <div class="principe principe--two">
+            <span class="principe__number">2</span>
+            <p class="principe__title">Steel <br> niet</p>
+          </div>
+          <div class="principe principe--three">
+            <span class="principe__number">3</span>
+            <p class="principe__title">Lieg <br> niet</p>
+          </div>
+          <div class="principe principe--four">
+            <span class="principe__number">4</span>
+            <p class="principe__title">Houd je beloftes</p>
+          </div>
+          <div class="principe principe--five">
+            <span class="principe__number">5</span>
+            <p class="principe__title">Help elkaar</p>
+          </div>
+          <div class="principe principe--six">
+            <span class="principe__number">6</span>
+            <p class="principe__title">Geef <br> niet op</p>
+          </div>
+        </div>
+      </section>
+
+    <section class="part struggle">
+      <h2 class="part__title struggle__title">Innerlijk strijd</h2>
+      <p class="part__text">Doorheen het verhaal zie je de strijd van de man om één van “de goed” te blijven, om te doen wat goed is, in een wereld waarin de meeste mensen hun moralen volledig hebben achtergelaten.<p>
+      <p class="part__text">Nullam dictum turpis in maximus malesuada. Nam mollis, felis ut condimentum convallis, nisl diam tincidunt nibh, at semper tortor.<p>
+    </section>
+
+    <section class="part scratch">
+      <h2 class="hidden">Krassen</h2>
+      <canvas id="canvas" width="560" height="700"></canvas>
+    </section>
+
+
+  </div>
   <section class="part awards">
     <h2 class="part__title awards__title">Rijkelijk <br> bekroond <br> boek</h2>
 

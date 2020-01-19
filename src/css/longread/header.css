@@ -140,7 +140,7 @@
 }
 
 .morality {
-  margin-top: 7rem;
+  padding-top: 7rem;
   padding-bottom: 10rem;
 }
 
@@ -156,6 +156,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-top: 20rem;
   padding-bottom: 10rem;
 
@@ -177,6 +178,12 @@
 /* PRINCIPE */
 
 .principes {
+  background-color: white;
+  color: black;
+  padding-bottom: 12rem;
+}
+
+.principes__wrapper {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
@@ -207,9 +214,7 @@
   line-height: 5.5rem;
 }
 
-.principe-leeg .principe__title, .principe-leeg .principe__number {
-  color: transparent;
-}
+/* STRUGGLE */
 
 .struggle {
   background-color: white;
@@ -345,10 +350,13 @@
     line-height: 8.5rem;
   }
 
+  /* INTRO */
+
   .intro {
     grid-template-columns: 3fr 2fr;
     grid-gap: 7.5rem;
-    grid-template-areas: 'title text'
+    grid-template-areas:
+      'title text'
       'img text';
     margin: 0 14rem;
     margin-top: 20rem;
@@ -371,6 +379,8 @@
     width: 45vw;
     margin-right: -10rem;
   }
+
+  /* CLOCK */
 
   .clock {
     display: grid;
@@ -407,8 +417,11 @@
     grid-row: span 2;
   }
 
+  /* MORALITY QUOTE */
+
   .morality-quote {
     width: 60vw;
+    padding-bottom: 15rem;
     margin: 0 auto;
   }
 
@@ -418,14 +431,27 @@
     word-break: normal;
   }
 
+  /* VERICAL SCROLL */
+
+  .scroll__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    background-color: white;
+  }
+
+  /* MORALITY */
+
   .morality {
-    margin-top: 20rem;
+    background-color: black;
+    width: 100vw;
+    padding: 5rem 0;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 50vw 42vw;
     grid-gap: 7.5rem;
-    grid-template-areas: 'title-morality text-morality'
+    grid-template-areas:
+      'title-morality text-morality'
       'img-morality text-morality';
-    margin-right: 14rem;
   }
 
   .morality__title {
@@ -435,6 +461,7 @@
 
   .morality-text__wrapper {
     grid-area: text-morality;
+    padding-right: 14rem;
   }
 
   .morality__img-wrapper {
@@ -445,12 +472,102 @@
     width: 50vw;
   }
 
+  /* GOODBAD */
+
+  .goodbad {
+    width: 90vw;
+    min-width: 90rem;
+    margin: 10rem 20rem;
+    margin-bottom: 0;
+    padding: 0;
+
+  }
+
+  .goodbad__title {
+    font-size: 12rem;
+  }
+
+  .goodbad .part__text {
+    font-size: 1.8rem;
+    width: 40vw;
+  }
+
+  /* PRINCIPE */
+
+  .principes {
+    padding-bottom: 0;
+  }
+
+  .principes__wrapper {
+    /* height: 95vh; */
+    height: 70rem;
+    display: grid;
+    grid-column-gap: 20rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-right: 15rem;
+    padding-top: 5rem;
+    overflow: initial;
+  }
+
+  .principe {
+    width: 100%;
+    margin: 0;
+  }
+
+  .principe__title {
+    font-size: 12rem;
+    line-height: 8rem;
+  }
+
+  .principe__number {
+    font-size: 40rem;
+  }
+
+  .principe--one {
+    align-self: center;
+  }
+
+  .principe--three {
+    align-self: end;
+    padding-bottom: 5%;
+  }
+
+  .principe--four {
+    align-self: top;
+    padding-top: 30%;
+  }
+
+  .principe--five {
+    align-self: end;
+    padding-bottom: 30%;
+  }
+
+  /* STRUGGLE */
+
+  /* SCRATCH */
+
+  #canvas {
+    display: block;
+    /* margin: 0 auto; */
+    background-image: url(../../assets/beelden/kras-bottom.png);
+    background-size: cover;
+    width: 100%;
+    width: 70rem;
+    max-width: 56rem;
+    height: auto;
+    /*cursor:  crosshair;
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;*/
+  }
+
+  /* AWARDS */
+
   .awards {
     padding: 20rem 14rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 7.5rem;
-    grid-template-areas: 'title-awards text-awards'
+    grid-template-areas:
+      'title-awards text-awards'
       'img-awards text-awards';
   }
 
@@ -471,6 +588,8 @@
     width: 30vw;
     margin-top: 0;
   }
+
+  /* PROMO */
 
   .promo {
     padding: 10rem 14rem;
