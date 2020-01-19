@@ -66,16 +66,16 @@
   </section>
 
   <div class="scroll__wrapper">
-    <section class="part morality">
-      <h2 class="part__title morality__title">Ieder voor <br> zichzelf</h2>
-      <div class="morality-text__wrapper">
-        <p class="part__text">McCarthy beweert dat <span class="text__highlight">de samenleving de morele kompassen van de mensen dicteert.</span> Zonder deze maatschappelijke normen, zijn hun persoonlijke normen en moralen niet te onderscheiden van hun eigenbelang.<p>
-        <p class="part__text">In het boek zie je hoe, door de <span class="text__highlight">afwezigheid van de menselijke beschaving</span> en de sociale normen, iedereen uitsluitend <span class="text__highlight">handelt uit eigenbelang.</span> Iedereen is egoïstisch en gelooft steevast dat zijn of haar eigen daden correct en gerechtvaarigd zijn.<p>
-        <p class="part__text">De man kijkt alleen naar zijn zoon en zichzelf. Hierdoor, ziet hij al de andere overlevers als hun vijanden. Volgens hem zijn zij “de goede” en al de rest zijn “de slechte”.<p>
-      </div>
+    <section class="morality">
+        <h2 class="part__title morality__title">Ieder voor <br> zichzelf</h2>
+        <div class="morality-text__wrapper">
+          <p class="part__text">McCarthy beweert dat <span class="text__highlight">de samenleving de morele kompassen van de mensen dicteert.</span> Zonder deze maatschappelijke normen, zijn hun persoonlijke normen en moralen niet te onderscheiden van hun eigenbelang.<p>
+          <p class="part__text">In het boek zie je hoe, door de <span class="text__highlight">afwezigheid van de menselijke beschaving</span> en de sociale normen, iedereen uitsluitend <span class="text__highlight">handelt uit eigenbelang.</span> Iedereen is egoïstisch en gelooft steevast dat zijn of haar eigen daden correct en gerechtvaarigd zijn.<p>
+          <p class="part__text">De man kijkt alleen naar zijn zoon en zichzelf. Hierdoor, ziet hij al de andere overlevers als hun vijanden. Volgens hem zijn zij “de goede” en al de rest zijn “de slechte”.<p>
+        </div>
       <div class="morality__img-wrapper">
         <picture>
-          <!-- <source media="(max-width: 600px)" srcset="./assets/beelden/fallenworld-mobile.png 338w" /> -->
+          <source media="(max-width: 600px)" srcset="./assets/beelden/paint-spot-mini.png 375w" />
           <source media="(min-width: 600px)" srcset="./assets/beelden/paint-spot.png 819w" />
           <img src="assets/beelden/paint-spot.png" class="morality__img" alt="Paint spot with excerpt">
         </picture>
@@ -126,11 +126,12 @@
 
     <section class="part scratch">
       <h2 class="hidden">Krassen</h2>
+      <img class="scratch__img" srcset="./assets/beelden/krasweg.png" sizes="15px" src="./assets/beelden/krawweg.png" alt="Text met kras het weg">
       <canvas id="canvas" width="560" height="700"></canvas>
     </section>
 
-
   </div>
+
   <section class="part awards">
     <h2 class="part__title awards__title">Rijkelijk <br> bekroond <br> boek</h2>
 

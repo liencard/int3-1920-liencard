@@ -5,12 +5,10 @@ if (brushRadius < 10) { brushRadius = 10; }
 
 const img = new Image();
 
-
 const init = () => {
   $canvas.addEventListener(`mousemove`, event => mousemoveHandler(event));
   $canvas.addEventListener(`touchmove`, event => touchmoveHandler(event));
 };
-
 
 // START NIET CORRECT
 img.onload = function () {
