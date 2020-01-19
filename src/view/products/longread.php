@@ -85,6 +85,42 @@
     <h2 class="part__title goodbad__title">De goede <br> versus <br> de slechte</h2>
     <p class="part__text">Volgens The Road, wat houd het in om een van de “goede” te zijn? In het boek is er één duidelijke regel wat de goede van de slechte onderscheid: <span class="text__highlight">De slechte eten mensen, de goede niet.</span><p>
     <p class="part__text">Dit is echter niet het enige principe waaraan “de goede” moeten voldoen.<p>
+
+    <section class="principes__wrapper">
+      <h2 class="hidden">De 6 principes</h2>
+      <div class="part principes">
+
+        <!-- <div class="principe principe-leeg">
+          <span class="principe__number">0</span>
+          <p class="principe__title">Lege tekst blok</p>
+        </div> -->
+        <div class="principe">
+          <span class="principe__number">1</span>
+          <p class="principe__title">Eet geen mensen</p>
+        </div>
+         <div class="principe">
+          <span class="principe__number">2</span>
+          <p class="principe__title">Steel <br> niet</p>
+        </div>
+         <div class="principe">
+          <span class="principe__number">3</span>
+          <p class="principe__title">Lieg <br> niet</p>
+        </div>
+         <div class="principe">
+          <span class="principe__number">4</span>
+          <p class="principe__title">Houd je beloftes</p>
+        </div>
+         <div class="principe">
+          <span class="principe__number">5</span>
+          <p class="principe__title">Help elkaar</p>
+        </div>
+         <div class="principe">
+          <span class="principe__number">6</span>
+          <p class="principe__title">Geef <br> niet op</p>
+        </div>
+
+      </div>
+    </section>
   </section>
 
   <section class="part struggle">
