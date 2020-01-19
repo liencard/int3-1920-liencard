@@ -53,8 +53,8 @@
       </div>
     </div>
     <div class="clock__img-wrapper">
-      <img srcset="./assets/beelden/clock-mini.png 357w,
-            ./assets/beelden/clock-big.png 579w"
+      <img srcset="./assets/beelden/clock-mini.gif 357w,
+            ./assets/beelden/clock-big.gif 579w"
         sizes="30vw"
         class="clock__img" src="./assets/beelden/clock-big.png" alt="Clock gif animatie">
     </div>
