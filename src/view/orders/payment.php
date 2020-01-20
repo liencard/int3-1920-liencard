@@ -13,6 +13,7 @@
         <img class="payment__img" srcset="./assets/img/logo-mastercard.svg" sizes="15px" src="./assets/img/logo-mastercard.svg" alt="Mastercard">
       </div>
     </label>
+
     <label>
       <input class="payment__input" type="radio" name="option_id" value="mastercard">
       <div class="payment__border">

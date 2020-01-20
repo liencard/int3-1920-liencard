@@ -1,0 +1,40 @@
+.footer-big {
+  display: none;
+}
+
+.footer-small {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  margin-top: calc(var(--spacerBig) / 2);
+}
+
+.footer-small-items {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  flex-wrap: wrap;
+
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.footer-small-items li {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 940px) {
+
+  .footer-big {
+    display: flex;
+    margin-top: 10rem;
+  }
+
+  .footer-small {
+    display: none;
+  }
+
+}

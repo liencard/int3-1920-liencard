@@ -8,11 +8,11 @@
   --gray3Color: #828282;
   --gray6Color: #f2f2f2;
   /* margins */
-  --smallMargin: 3rem;
-  --mediumMargin: 4rem;
+  --spacerSmall: 2rem;
+  --spacerMedium: 3rem;
   /* borders */
-  --borderRadius: .7rem;
-  --layoutBorderRadius: 3rem;
+  --borderRadius: .2rem;
+
   /* font */
   --font: news-gothic-std, sans-serif;
   --fontTitle: swiss, sans-serif;
@@ -21,6 +21,6 @@
   /* fontweight */
   --fontWeightLight: 300;
   --fontWeightRegular: 400;
-  --fontWeightSemiBold: 600;
+  --fontWeightRegularLakeshore: 500;
   --fontWeightBold: 700;
 }

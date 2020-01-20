@@ -42,6 +42,9 @@ class Controller {
     if (!empty($_SESSION['error'])) {
       unset($_SESSION['error']);
     }
+    if (!empty($_SESSION['add'])) {
+      unset($_SESSION['add']);
+    }
   }
 
   public function set($variableName, $value) {

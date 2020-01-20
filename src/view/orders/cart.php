@@ -42,14 +42,16 @@
                 <p class="item__option"><?php echo $item['product']['name'];?><p>
               </td>
               <td class='price'>€<?php echo $item['product']['price'];?></td>
-              <td class='quantity'> <input class="quantity" type="text" name="quantity[<?php echo $item['product']['id'];?>]" value="<?php echo $item['quantity'];?>"/> </td>
+              <td class='quantity'> <input class="quantity" type="text" name="quantity[<?php echo $item['product']['id'] . '-' . $item['option'] ;?>]" value="<?php echo $item['quantity'];?>"/> </td>
               <td class='total'>€<?php echo $itemTotal;?></td>
-              <td class='item__remove'><button type="submit" class="btn__remove" name="remove" value="<?php echo $item['product']['id'];?>"><img src="./assets/img/icon-remove.svg"  alt="remove" /></button></td>
+              <td class='item__remove'>
+                <button type="submit" class="btn__remove" name="remove" value="<?php echo $item['product']['id'] . '-' . $item['option'] ;?>"><img src="./assets/img/icon-remove.svg"  alt="remove" /></button>
+              </td>
             </tr>
             <?php } ?>
           </tbody>
-          <button type="submit" class="btn btn__update" name="action" value="update">Update</button>
         </table>
+        <button type="submit" class="btn btn__update" name="action" value="update">Update</button>
       </div>
 
       <section class="overview">

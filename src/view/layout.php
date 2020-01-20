@@ -19,9 +19,7 @@
             </ul>
             <ul class="secondary-nav__list">
                 <li class="secondary-nav__list-item highlight3"><a href="/video" data-gtm="header-nav/video/text" target="_blank" class="secondary-nav__link highlight3">Video</a></li>
-                <!-- <li class="secondary-nav__list-item highlight2"><a href="/humosapiens" data-gtm="header-nav/humosapiens/text" class="secondary-nav__link highlight2">Humo Sapiens</a></li> -->
                 <li class="secondary-nav__list-item"><a href="/tv-gids" data-gtm="header-nav/tv-gids/text" class="secondary-nav__link">TV-Gids</a></li>
-                <!-- <li class="secondary-nav__list-item"><a href="/wedstrijden" data-gtm="header-nav/wedstrijden/text" class="secondary-nav__link">Wedstrijden</a></li> -->
                 <li class="secondary-nav__list-item"><a href="/zoekertjes" data-gtm="header-nav/zoekertjes/text" class="secondary-nav__link">Zoekertjes</a></li>
                 <li class="secondary-nav__list-item"><a href="https://abonnement.humo.be/?otag=DKhkLG&utm_source=humo&utm_medium=website&utm_campaign=colofon" data-gtm="header-nav/abonnement/text" class="secondary-nav__link" target="_blank">Abonnement nemen</a></li>
             </ul>
@@ -48,12 +46,17 @@
                   <li class="primary-nav__list-item"> <a href="/muziek" data-gtm="main-nav/muziek/text" class="primary-nav__link">Muziek</a> </li>
                   <li class="primary-nav__list-item"> <a href="index.php" data-gtm="main-nav/muziek/text" class="primary-nav__link active">Shop</a> </li>
                   <li class="cart-icon">
-                      <!-- <label for="search-sub-nav" class="search-trigger__label"> <i class="icon-search" data-gtm="header/search/image"></i> </label> -->
                     <a class="" href="index.php?page=cart" ><?php echo $numItems;?><img srcset="./assets/img/cart-black.svg" sizes="16px" src="./assets/img/cart-black.svg" alt="cart vector"></a>
                   </li>
               </ul>
             </div>
           </nav>
+
+          <nav class="hamburger-nav" role="navigation">
+            <img class="nav__burger" srcset="./assets/img/hamburger-icon.svg" sizes="5px" src="./assets/img/hamburger-icon.svg" alt="Logo HUMO navigatie">
+            <a class="" href="index.php" ><img class="nav__logo" srcset="./assets/img/humo-logo.svg" sizes="30px" src="./assets/img/humo-logo.svg" alt="Logo HUMO navigatie"></a>
+            <a class="nav__cart--link" href="index.php?page=cart" ><?php echo $numItems;?><img class="nav__cart" srcset="./assets/img/cart-black.svg" sizes="16px" src="./assets/img/cart-black.svg" alt="cart vector"></a>
+        </nav>
       </header>
 
       <main>
@@ -69,9 +72,91 @@
           <?php echo $content;?>
         </div>
       </main>
-      <footer>
 
+      <footer class="mod-footer footer-big">
+        <nav class="container" role="navigation">
+            <ul class="mod-grid mod-footer-top">
+                <li class="grid-item grid-item-5">
+                    <h5><a href="/actua" class="noTextTransform">Actua</a></h5>
+                    <ul>
+                        <li><a href="/deze-week">Nu in Humo</a></li>
+                        <li><a href="/columns">De Columns</a></li>
+                        <li><a href="/dossiers">Dossiers</a></li>
+                        <li><a href="/politiek">Politiek</a></li>
+                        <li><a href="/sport">Sport</a></li>
+                        <li><a href="/onze-man-vrouw">Onze Man/Vrouw</a></li>
+                        <li><a href="/humo-archief">Eerder in Humo</a></li>
+                        <li><a href="/de-eindejaarsvragen">De eindejaarsvragen</a></li>
+                    </ul>
+                </li>
+                <li class="grid-item grid-item-5">
+                    <h5><a href="/humor" class="noTextTransform">Humor</a></h5>
+                    <ul>
+                        <li><a href="/fotospecials">Fotospecials</a></li>
+                        <li><a href="/cartoons">Cartoons</a></li>
+                        <li><a href="/uitlaat">Uitlaat</a></li>
+                        <li><a href="/de-beste-grap-volgens">(bulderlacht)</a></li>
+                        <li><a href="/zelf-iets-opladen">Doe het zelf</a></li>
+                        <li><a href="/comedycup">Humo's Comedy Cup</a></li>
+                    </ul>
+                </li>
+                <li class="grid-item grid-item-5">
+                    <h5><a href="/tv-en-film" class="noTextTransform">Tv/Film</a></h5>
+                    <ul>
+                        <li><a href="/tv-gids">Tv-gids</a></li>
+                        <li><a href="/tv-tips">Tv-tips</a></li>
+                        <li><a href="/tv-reviews">Tv-reviews</a></li>
+                        <li><a href="/filmreviews">Filmreviews</a></li>
+                        <li><a href="/honderd-films">De 100 beste films volgens (es)</a></li>
+                    </ul>
+                </li>
+                <li class="grid-item grid-item-5">
+                    <h5><a href="/muziek" class="noTextTransform">Muziek</a></h5>
+                    <ul>
+                        <!-- TODO: <li><a href="#">Muzieknieuws</a></li> -->
+                        <li><a href="/concert-reviews">Concertreviews</a></li>
+                        <li><a href="/cd-reviews">Cd-reviews</a></li>
+                        <!-- <li><a href="/arriba">Arriba!</a></li> -->
+                        <li><a href="/rock-rally">Humo's Rock Rally</a></li>
+                        <li><a href="/festivalitis">Festivalitis</a></li>
+                    </ul>
+                </li>
+                <li class="grid-item grid-item-5">
+                    <h5><a href="/boeken" class="noTextTransform">Boeken</a></h5>
+                    <ul>
+                        <li><a href="/boekreviews">Reviews</a></li>
+                        <li><a href="/boeken-fictie">Fictie</a></li>
+                        <li><a href="/boeken-non-fictie">Non-fictie</a></li>
+                        <li><a href="/het-lezen-zoals-het-is">Het lezen zoals het is</a></li>
+                        <li><a href="/dossiers/637/de-grootste-schrijvers-van-deze-tijd">De grootste schrijvers van deze tijd</a></li>
+                    </ul>
+                    <h5 style="margin-top:25px;">Ga naar</h5>
+                    <ul>
+                        <li><a href="/video">Video</a></li>
+                        <li><a href="/fotospecials">Foto's</a></li>
+                        <li><a href="/wedstrijden">Wedstrijden</a></li>
+                        <li><a href="/zoekertjes">Zoekertjes</a></li>
+                        <li><a href="/app">Apps</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
       </footer>
+
+      <footer class="mod-footer footer-small">
+        <div id="footer_abo_line">
+            <p><a href="index.php?page=detail&id=15" class="btn">Neem een abonnement</a></p>
+        </div>
+        <nav>
+          <ul class="footer-small-items">
+            <li><a href="javascript:switchToDesktopSite();void(null);">Naar de volledige website</a></li>
+            <li><a href="/home/57723/colofon">Colofon</a></li>
+            <li><a href="/home/57721/contact">Contact</a></li>
+            <li><a href="javascript:changePrivacyWall();void(null);">Cookie instellingen</a></li>
+          </ul>
+        </nav>
+      </footer>
+
       <?php echo $js; ?>
   </body>
 </html>

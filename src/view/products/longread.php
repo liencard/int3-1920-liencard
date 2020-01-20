@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content longread">
   <section class="header">
 
     <!-- <div class="header__wrapper">
@@ -83,9 +83,11 @@
     </section>
 
     <section class="part goodbad">
-      <h2 class="part__title goodbad__title">De goede <br> versus <br> de slechte</h2>
-      <p class="part__text">Volgens The Road, wat houd het in om een van de “goede” te zijn? In het boek is er één duidelijke regel wat de goede van de slechte onderscheid: <span class="text__highlight">De slechte eten mensen, de goede niet.</span><p>
-      <p class="part__text">Dit is echter niet het enige principe waaraan “de goede” moeten voldoen.<p>
+      <div class="text__wrapper">
+        <h2 class="part__title goodbad__title">De goede <br> versus <br> de slechte</h2>
+        <p class="part__text">Volgens The Road, wat houd het in om een van de “goede” te zijn? In het boek is er één duidelijke regel wat de goede van de slechte onderscheid: <span class="text__highlight">De slechte eten mensen, de goede niet.</span><p>
+        <p class="part__text">Dit is echter niet het enige principe waaraan “de goede” moeten voldoen.<p>
+      </div>
     </section>
 
     <section class="part principes">

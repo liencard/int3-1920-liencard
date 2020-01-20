@@ -18,8 +18,8 @@ class OrdersController extends Controller {
     if (!empty($_POST['action'])) {
       if ($_POST['action'] == 'add') {
         $this->_handleAdd();
-        $_SESSION['info'] = 'Je product werd toegevoegd!';
-        header('Location: index.php');
+        $_SESSION['add'] = 'Toegevoegd aan winkelmandje';
+        header('Location: index.php?page=detail&id='. $_POST['product_id']);
         exit();
       }
       if ($_POST['action'] == 'empty') {
@@ -45,19 +45,21 @@ class OrdersController extends Controller {
 
   // TOEVOEGEN
   private function _handleAdd() {
-    if (empty($_SESSION['cart'][$_POST['product_id']])) {
-      $product= $this->productDAO->selectProductById($_POST['product_id']);
+    if (empty($_SESSION['cart'][$_POST['product_id'] . '-' . $_POST['option_id']])) {
+      $product= $this->productDAO->selectProductByOption($_POST['product_id'], $_POST['option_id']);
       if (empty($product)) {
         return;
       }
-      $_SESSION['cart'][$_POST['product_id']] = array(
+      $_SESSION['cart'][$_POST['product_id'] . '-' . $_POST['option_id']] = array(
         'product' => $product,
         'option' => $_POST['option_id'],
         'quantity' => $_POST['quantity']
       );
-    }
+    } else {
     // $_SESSION['cart'][$_POST['product_id']]['option_id'];
-    $_SESSION['cart'][$_POST['product_id']]['quantity']++;
+      $_SESSION['cart'][$_POST['product_id']] . '-' . $_POST['product_id']['quantity'] =
+      $_SESSION['cart'][$_POST['product_id']] . '-' . $_POST['product_id']['quantity'] + $_POST['quantity'];
+    }
   }
 
   // VERWIJDEREN

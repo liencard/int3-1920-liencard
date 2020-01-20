@@ -72,6 +72,23 @@ class ProductDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
+   public function selectProductByOption($product, $option){
+    $sql = "SELECT `products`.`title`, `products`.`tumbnail`, `products`.`subtitle`, `products`.`id`, `product_options`.`price`, `product_options`.`name`
+      FROM `products`
+      LEFT JOIN `options`
+      ON `products`.`option_id` = `options`.`id`
+      LEFT JOIN `product_options`
+      ON `product_options`.`option_id` = `options`.`id`
+      WHERE `products`.`id` = :product
+      AND `product_options`.`id` = :option";
+
+      $stmt = $this->pdo->prepare($sql);
+      $stmt->bindValue(':product',$product);
+      $stmt->bindValue(':option',$option);
+      $stmt->execute();
+      return $stmt->fetch(PDO::FETCH_ASSOC);
+  }
+
   public function selectImagesById($id){
     $sql = "SELECT * FROM `products`
         INNER JOIN `product_images` ON `products`.`id` = `product_images`.`product_id`
@@ -81,12 +98,6 @@ class ProductDAO extends DAO {
     $stmt->execute();
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
-
-
-
-
-
-
 
   public function delete($id){
     $sql = "DELETE FROM `todos` WHERE `id` = :id";

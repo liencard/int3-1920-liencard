@@ -7,7 +7,14 @@
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: var(--fontWeightBold);
+}
+
+.btn {
+  border-radius: var(--borderRadius);
+  background-color: var(--redColor);
+  color: white;
+  padding: 1rem 2rem;
 }
 
 a:hover {
@@ -15,7 +22,7 @@ a:hover {
 }
 
 .box {
-  font-weight: 700;
+  font-weight: var(--fontWeightBold);
   text-align: center;
   padding: .5rem 1rem;
   width: 40vw;

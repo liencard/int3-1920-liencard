@@ -1397,7 +1397,7 @@ em, i {
       margin: 0;
       width: 100%; }
       .mod-block-alternate .container, .mod-footer .container, .mod-footer-bottom .container, .mod-navigation-primary .container, .mod-navigation-secondary .container {
-        padding: 0 4px;
+        /* padding: 0 4px; */
         width: 1016px; } }
 
 

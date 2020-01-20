@@ -19,7 +19,7 @@
 }
 
 .payment__input:checked ~ .payment__border {
-  border: .1rem solid var(--redColor);
+  border: .1rem solid var(--redColor); 
 }
 
 .payment__input {

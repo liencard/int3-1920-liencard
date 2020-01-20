@@ -25,7 +25,7 @@
   font-style: bold;
   font-weight: 700;
 }
-
+ 
 @font-face {
   font-family: lakeshore;
   src: url(./../assets/fonts/lakeshore/Lakeshore-Regular.woff2) format('woff2'), url(./../assets/fonts/lakeshore/Lakeshore-Regular.woff) format('woff');
