@@ -1,8 +1,5 @@
-.process__order {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem;
+.cart__table {
+  width: 90vw;
 }
 
 .table__head {
@@ -16,9 +13,13 @@
   grid-template-areas:
     'image info info info'
     'image quantity total remove';
-  /* border-bottom: .1rem dashed black;
-  padding-bottom: 1.5rem; */
+  border-bottom: .1rem dashed black;
+  padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.item:last-child {
+  border-bottom: none;
 }
 
 .item__image {
@@ -75,14 +76,55 @@
 
 /* OVERVIEW */
 
+.overview {
+  border-top: .1rem dashed black;
+  margin-top: 3rem;
+}
+
+.overview__wrapper {
+  border-bottom: .1rem dashed black;
+  padding-bottom: 2.5rem;
+}
+
 .overview__wrapper div {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   font-size: 1.8rem;
+}
+
+.overview__title {
+  font-size: 2.4rem;
+  font-family: Swiss, sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
 }
 
 .overview__subtotaal {
   font-weight: 700;
+}
+
+.overview__promocode {
+  margin-top: 1.5rem;
+}
+
+.overview__promocode .form__label {
+  color: var(--redColor);
+  margin-bottom: 0;
+  width: 100%;
+  margin-right: var(--spacerSmall);
+}
+
+.btn__promocode {
+  background-color: transparent;
+  border: .1rem solid #e0e0e0;
+  color: var(--gray3Color);
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  border-radius: var(--borderRadius);
+  height: 4rem;
+  align-items: baseline;
 }
 
 .checkout {
@@ -142,13 +184,28 @@
 
 @media screen and (min-width: 500px) {
 
-  .process__order {
-    margin-bottom: 10rem;
+  .item {
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+  }
+}
+
+@media screen and (min-width: 650px) {
+
+  .item {
+    grid-template-columns: 3fr 6fr 3fr 3fr 3fr 1fr;
+    grid-template-areas: 'image info price quantity total remove';
+  }
+}
+
+@media screen and (min-width: 850px) {
+
+  .cart__table {
+    width: auto;
   }
 
   .cart__form {
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 4fr 2fr;
     grid-gap: 4rem;
   }
 
@@ -170,14 +227,9 @@
     grid-template-columns: 3fr 6fr 3fr 3fr 3fr 1fr;
     grid-gap: 2rem;
     grid-template-areas: 'image info price quantity total remove';
-    border-bottom: .1rem dashed black;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     align-items: center;
-  }
-
-  .item:last-child {
-    border-bottom: none;
   }
 
   .price {
@@ -188,22 +240,23 @@
     display: inline;
   }
 
-  .overview__title {
-    font-size: 2.4rem;
-    font-family: Swiss, sans-serif;
-    font-weight: 700;
-    margin-bottom: 3.5rem;
+  .overview {
+    border-top: none;
+    margin-top: 0;
   }
 
   .overview__wrapper {
     margin-bottom: 2.5rem;
-    padding-bottom: 2.5rem;
     font-size: 1.4rem;
-    border-bottom: .1rem dashed black;
   }
 
   .overview__wrapper div {
     margin-top: .5rem;
+  }
+
+  .overview__title {
+    margin-bottom: 3.5rem;
+    margin-top: 0;
   }
 
   .overview--minitext {

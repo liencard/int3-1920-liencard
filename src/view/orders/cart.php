@@ -1,5 +1,13 @@
 <section class="process__order">
-  <!-- process bar -->
+  <div class="process__bar">
+    <img class="process__img" srcset="./assets/img/step1-red.svg" sizes="34px" src="./assets/img/step1--red.svg" alt="Step 1 icon">
+    <div class="step-line"></div>
+    <img class="process__img" srcset="./assets/img/step2.svg" sizes="34px" src="./assets/img/step2.svg" alt="Step 2 icon">
+    <div class="step-line"></div>
+    <img class="process__img" srcset="./assets/img/step3.svg" sizes="34px" src="./assets/img/step3.svg" alt="Step 3 icon">
+    <div class="step-line"></div>
+    <img class="process__img" srcset="./assets/img/step4.svg" sizes="34px" src="./assets/img/step4.svg" alt="Step 4 icon">
+  </div>
   <h1 class="title">Jouw bestelling</h1>
 </section>
 
@@ -51,22 +59,25 @@
             <?php } ?>
           </tbody>
         </table>
-        <button type="submit" class="btn btn__update" name="action" value="update">Update</button>
+        <div class="cart-form__extra">
+          <a class="back__btn" href="index.php">Verder winkelen</a>
+          <button type="submit" class="btn btn__update" name="action" value="update">Update</button>
+        </div>
       </div>
 
       <section class="overview">
         <h2 class="overview__title">Overview</h2>
-
         <div class="overview__wrapper">
           <div class="overview__subtotaal">
             <p>Subtotaal</p>
             <p>€<?php echo $total;?></p>
           </div>
-          <div class="overview__shipping">
-            <p>Verzendkosten</p>
-            <p>Gratis</p>
+          <div class="overview__promocode">
+            <label class="form__label">Heb je een kortringscode?
+              <input type="text" class="input" placeholder="Vul je code in" value="..."/>
+            </label>
+            <button type="submit" id="promocode" class="btn__promocode" name="action" value="activate">Activeer</button>
           </div>
-          <p class="overview--minitext">Gratis vanaf €50</p>
         </div>
 
         <div class="checkout">
@@ -77,18 +88,13 @@
           <button type="submit" id="checkout" class="btn btn__uitchecken" name="action" value="checkout">Uitchecken</button>
         </div>
       </section>
-
      </form>
 
     <?php else: ?>
-
      <div class="cart__empty">
        <p class="cart__empty-text">Oeps, er zit nog niets in je winkelmandje!</p>
        <a class="btn btn__empty" href="index.php?page=index">Bekijk producten</a>
      </div>
     <?php endif; ?>
-
-
-
 
 </section>

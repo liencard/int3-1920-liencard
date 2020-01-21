@@ -1,5 +1,14 @@
 <section class="process__order">
   <!-- process bar -->
+  <div class="process__bar">
+    <a href="index.php?page=cart"><img class="process__img" srcset="./assets/img/step1--done.svg" sizes="34px" src="./assets/img/step1--done.svg" alt="Step 1 icon"></a>
+    <div class="step-line step-line--red"></div>
+    <img class="process__img" srcset="./assets/img/step2--red.svg" sizes="34px" src="./assets/img/step2--red.svg" alt="Step 2 icon">
+    <div class="step-line"></div>
+    <img class="process__img" srcset="./assets/img/step3.svg" sizes="34px" src="./assets/img/step3.svg" alt="Step 3 icon">
+    <div class="step-line"></div>
+    <img class="process__img" srcset="./assets/img/step4.svg" sizes="34px" src="./assets/img/step4.svg" alt="Step 4 icon">
+  </div>
   <h1 class="title">Persoonlijke Gegevens</h1>
 </section>
 
@@ -63,7 +72,7 @@
     </div>
 
     <div class="checkout__overview">
-      <h2 class="checkout__title">Besteloverzicht <span class="checkout__title--extra">4 artikels</span></h2>
+      <h2 class="checkout__title">Besteloverzicht <span class="checkout__title--extra"><?php echo $numItems;?> artikels</span></h2>
       <?php
         $total = 0;
         foreach($_SESSION['cart'] as $item) {
@@ -95,5 +104,6 @@
     </div>
 
   </form>
+  <a class="back__btn back__checkout" href="index.php?page=cart">Terug naar je bestelling</a>
 
 </section>

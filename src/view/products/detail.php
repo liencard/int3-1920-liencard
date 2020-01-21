@@ -10,7 +10,7 @@
     <?php if ($product['type'] === 'boek'): ?>
       <div class="book__wrapper--mini">
         <p class="book__lang">Nederlands</p>
-        <p class="book__pages"><?php echo $product['extra']; ?>blz.</p>
+        <p class="book__pages"><?php echo $product['extra']; ?></p>
       </div>
     <?php endif; ?>
     <p class="book__description"><?php echo $product['description']; ?></p>
@@ -54,7 +54,7 @@
           <p class="price__title">Prijs</p>
           <p class="price__price"><?php echo $product['priceinfo'] ?></p>
         </div>
-        <?php if ($product['type'] === 'boek' && $product['id'] === '16' && $product['id'] === '15'  ): ?>
+        <?php if ($product['type'] === 'boek' || $product['id'] == 16 || $product['id'] == 15  ): ?>
         <div class="price__default">
           <p class="price__title">Prijs ebook</p>
           <p class="price__price">€1,99</p>

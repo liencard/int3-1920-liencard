@@ -76,11 +76,20 @@
   display: none;
 }
 
-@media screen and (min-width: 500px) {
+.btn__uitchecken {
+  height: 6rem;
+}
+
+.back__checkout {
+  margin-top: var(--spacerSmall);
+  display: inline-block;
+}
+
+@media screen and (min-width: 700px) {
 
   .checkout__form {
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 4rem;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 2rem;
     grid-template-areas:
       'order overview'
       'order pay';
@@ -88,7 +97,7 @@
 
   .checkout__gegevens {
     display: inline-block;
-    padding-right: 4rem;
+    padding-right: 2rem;
     border-right: .1rem dashed black;
     order: 0;
     grid-area: order;
@@ -114,6 +123,23 @@
     font-weight: 500;
     color: black;
     display: inline-block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  .checkout__form {
+    grid-template-columns: 2fr 1fr;
+    grid-gap: calc(var(--spacerSmall) * 2);
+    grid-row-gap: 0;
+  }
+
+  .checkout__gegevens {
+    padding-right: 4rem;
+  }
+
+  .checkout {
+    margin-top: 0;
   }
 
 }

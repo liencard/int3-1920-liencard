@@ -125,8 +125,10 @@ class OrdersController extends Controller {
       foreach ($_SESSION['cart'] as $productId => $quantity) {
         array_push($data, array(
           'order_id' => $gegevensId['id'],
-          'product_id' => $productId,
-          'quantity' => $quantity['quantity']
+          'product_name' => $quantity['product']['title'],
+          'option_name' => $quantity['product']['name'],
+          'quantity' => $quantity['quantity'],
+          'subtotal' => $quantity['product']['price'] * $quantity['quantity']
         ));
       }
       foreach($data as $order){

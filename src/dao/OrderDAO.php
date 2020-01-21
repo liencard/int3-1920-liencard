@@ -40,11 +40,13 @@ class OrderDAO extends DAO {
   }
 
 public function insertOrder($data){
-    $sql = "INSERT INTO `orders_products` (`order_id`, `product_id`, `quantity`) VALUES(:order_id,:product_id,:quantity)";
+    $sql = "INSERT INTO `orders_products` (`order_id`, `product_name`, `option_name`, `quantity` ,`subtotal`) VALUES(:order_id,:product_name,:option_name,:quantity,:subtotal)";
     $stmt = $this->pdo->prepare($sql);
     $stmt->bindValue(':order_id',$data['order_id']);
-    $stmt->bindValue(':product_id',$data['product_id']);
+    $stmt->bindValue(':product_name',$data['product_name']);
+    $stmt->bindValue(':option_name',$data['option_name']);
     $stmt->bindValue(':quantity',$data['quantity']);
+    $stmt->bindValue(':subtotal',$data['subtotal']);
 
     if($stmt->execute()){
         return $this->selectOrderById($this->pdo->lastInsertId());

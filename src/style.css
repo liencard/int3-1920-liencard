@@ -11,6 +11,7 @@
 @import './css/components/checkout.css';
 @import './css/components/payment.css';
 @import './css/components/confirmation.css';
+@import './css/components/processbar.css';
 @import './css/longread/header.css';
 
 html {
