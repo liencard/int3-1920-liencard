@@ -1,9 +1,11 @@
 require('./style.css');
 
+import Product from './js/model/Product.js';
 import './js/validate.js';
 import './js/scratch.js';
 
 {
+  const $products = document.querySelector('.products');
 
   const handleClickImage = e => {
     e.preventDefault();
@@ -40,32 +42,18 @@ import './js/scratch.js';
   };
 
   const showProducts = products => {
-    const $list = document.querySelector('.products');
-    $list.innerHTML = ``;
-    products.forEach(product => {
-      $list.innerHTML += `
-        <article class="product">
-          <div class="product__info">
-            <div class="product__head">
-              <h3 class="product__title">${product.title}</h3>
-              <p class="product__subtitle">${product.subtitle}</p>
-            </div>
-            <div class="product__buy">
-              <p class="product__price">${product.priceinfo}</p>
-              <a class="product__btn" href="index.php?page=detail&id=${product.id}" >+ <img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"></a>
-            </div>
-          </div>
-          <a class="product__link" href="index.php?page=detail&id=${product.id}" ><img class="product__img" srcset=".${product.image}" sizes="15px" src="${product.image}" alt="${product.title}"></a>
-        </article>`;
-    });
+    $products.innerHTML = products
+      .map(product => createProduct(product))
+      .join(``);
   };
 
+  const createProduct = productObj => {
+    const product = new Product(productObj);
+    console.log(productObj);
+    return product.createHTML();
+  };
 
   const init = () => {
-
-    // if (document.body.classList.contains('webshop')) {
-    //   require('./js/webshop.js');
-    // }
 
     const $imageLinks = document.querySelectorAll(`.product-image-link`);
     $imageLinks.forEach($link => $link.addEventListener(`click`, handleClickImage));
