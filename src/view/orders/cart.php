@@ -33,9 +33,13 @@
           <tbody class="table__body">
           <?php
             $total = 0;
+            $Oldtotal = 0;
             foreach($_SESSION['cart'] as $item) {
-              $itemTotal = number_format($item['product']['price'] * $item['quantity'], 2);
+              $itemTotal = number_format($item['price'] * $item['quantity'], 2);
               $total += $itemTotal;
+
+              $itemOldTotal = number_format($item['product']['price'] * $item['quantity'], 2);
+              $Oldtotal += $itemOldTotal;
             ?>
 
             <tr class="item">
@@ -49,9 +53,17 @@
                 <p class="item__subtitle"><?php echo $item['product']['subtitle'];?><p>
                 <p class="item__option"><?php echo $item['product']['name'];?><p>
               </td>
-              <td class='price'>€<?php echo $item['product']['price'];?></td>
+              <td class='price'>
+                <input type=hidden name="price" value="<?php echo $item['price'];?>">
+                <?php if($item['product']['price'] != $item['price']) { echo '<del class="oldprice">&euro; ' .  $item['product']['price'] . '</del';}?>
+                <p>€<?php echo $item['price'];?></p>
+              </td>
               <td class='quantity'> <input class="quantity" type="text" name="quantity[<?php echo $item['product']['id'] . '-' . $item['option'] ;?>]" value="<?php echo $item['quantity'];?>"/> </td>
-              <td class='total'>€<?php echo $itemTotal;?></td>
+              <td class='total'>
+                <input  type=hidden name="price" value="<?php echo $item['price'];?>">
+                <?php if($item['product']['price'] != $item['price']) { echo '<del class="oldprice">&euro; ' .  $item['product']['price'] * $item['quantity'] . '</del';}?>
+                <p>€<?php echo $itemTotal;?></p>
+              </td>
               <td class='item__remove'>
                 <button type="submit" class="btn__remove" name="remove" value="<?php echo $item['product']['id'] . '-' . $item['option'] ;?>"><img src="./assets/img/icon-remove.svg"  alt="remove" /></button>
               </td>
@@ -70,14 +82,22 @@
         <div class="overview__wrapper">
           <div class="overview__subtotaal">
             <p>Subtotaal</p>
-            <p>€<?php echo $total;?></p>
+            <?php if ($total != $Oldtotal): ?>
+              <div class="prices__wrapper">
+                <p class="oldprice"> <del>€<?php echo $Oldtotal;?></del></p>
+                <p>€<?php echo $total;?><p>
+              </div>
+            <?php else: ?>
+              <p>€<?php echo $total;?><p>
+            <?php endif; ?>
           </div>
           <div class="overview__promocode">
-            <label class="form__label">Heb je een kortringscode?
-              <input type="text" class="input" placeholder="Vul je code in" value="..."/>
+            <label class="form__label" for="promocode">Heb je een kortringscode?
+              <input type="text" class="input" name="promocode" id="promocode" placeholder="Vul je code in" />
             </label>
-            <button type="submit" id="promocode" class="btn__promocode" name="action" value="activate">Activeer</button>
+            <button type="submit" id="promocode" class="btn__promocode" name="action" value="promo">Activeer</button>
           </div>
+          <p class="promo__popup"><?php if(!empty($_SESSION['promo'])) { echo $_SESSION['promo'];}?></p>
         </div>
 
         <div class="checkout">

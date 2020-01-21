@@ -1,5 +1,13 @@
-<section class="process__order">
-  <!-- process bar -->
+<section class="process__order process__order--payement">
+   <div class="process__bar">
+    <a href="index.php?page=cart"><img class="process__img" srcset="./assets/img/step1--done.svg" sizes="34px" src="./assets/img/step1--done.svg" alt="Step 1 icon"></a>
+    <div class="step-line step-line--red"></div>
+    <a href="index.php?page=checkout"><img class="process__img" srcset="./assets/img/step2--done.svg" sizes="34px" src="./assets/img/step2--done.svg" alt="Step 2 icon"></a>
+    <div class="step-line step-line--red"></div>
+    <img class="process__img" srcset="./assets/img/step3--red.svg" sizes="34px" src="./assets/img/step3--red.svg" alt="Step 3 icon">
+    <div class="step-line"></div>
+    <img class="process__img" srcset="./assets/img/step4.svg" sizes="34px" src="./assets/img/step4.svg" alt="Step 4 icon">
+  </div>
   <h1 class="title">Betalen</h1>
 </section>
 
@@ -38,5 +46,5 @@
     <a class="btn btn__payment" href="index.php?page=confirmation">Bestelling afronden</a>
     <p class="btn__payment--text">* Je wordt doorverwezen naar een extere betaalpagina</p>
   </div>
-
+  <a class="back__btn" href="index.php?page=checkout">Terug naar je gegevens</a>
 </section>

@@ -75,9 +75,12 @@
       <h2 class="checkout__title">Besteloverzicht <span class="checkout__title--extra"><?php echo $numItems;?> artikels</span></h2>
       <?php
         $total = 0;
-        foreach($_SESSION['cart'] as $item) {
-          $itemTotal = number_format($item['product']['price'] * $item['quantity'], 2);
-          $total += $itemTotal;
+        $Oldtotal = 0;
+          foreach($_SESSION['cart'] as $item) {
+            $itemTotal = number_format($item['price'] * $item['quantity'], 2);
+            $total += $itemTotal;
+            $itemOldTotal = number_format($item['product']['price'] * $item['quantity'], 2);
+            $Oldtotal += $itemOldTotal;
       ?>
       <div class="wrapper__orderoverview">
         <img class="orderoverview__img" srcset="<?php echo $item['product']['tumbnail'];?>" sizes="15px" src="<?php echo $item['product']['tumbnail'];?>" alt="product tumbnail">

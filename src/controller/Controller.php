@@ -45,6 +45,9 @@ class Controller {
     if (!empty($_SESSION['add'])) {
       unset($_SESSION['add']);
     }
+    if (!empty($_SESSION['promo'])) {
+      unset($_SESSION['promo']);
+    }
   }
 
   public function set($variableName, $value) {

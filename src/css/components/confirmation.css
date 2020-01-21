@@ -8,3 +8,24 @@
 .btn__confirmation {
   margin-top: 3rem;
 }
+
+.confirmed__img {
+  width: 40vw;
+  margin-bottom: var(--spacerMedium);
+}
+
+@media screen and (min-width: 700px) {
+
+  .confirmed__img {
+    width: 25vw;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+
+  .confirmed__img {
+    width: 15vw;
+  }
+
+}

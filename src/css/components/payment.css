@@ -19,7 +19,7 @@
 }
 
 .payment__input:checked ~ .payment__border {
-  border: .1rem solid var(--redColor); 
+  border: .1rem solid var(--redColor);
 }
 
 .payment__input {
@@ -44,10 +44,11 @@
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
 
   .method {
-    width: 30vw;
+    /* width: 30vw; */
+    max-width: 50rem;
     margin: 0 auto;
   }
 

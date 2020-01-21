@@ -72,6 +72,10 @@
 
 .total {
   grid-area: total;
+  display: flex;
+  flex-direction: row;
+  font-weight: var(--fontWeightBold);
+  color: var(--redColor);
 }
 
 /* OVERVIEW */
@@ -182,6 +186,19 @@
   margin-top: 3rem;
 }
 
+.oldprice {
+  font-weight: 500;
+  color: black;
+  padding-right: 1.5rem;
+}
+
+.promo__popup {
+  text-transform: uppercase;
+  font-weight: var(--fontWeightBold);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 500px) {
 
   .item {
@@ -233,7 +250,12 @@
   }
 
   .price {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .total {
+    flex-direction: column;
   }
 
   .table__head {
@@ -251,7 +273,7 @@
   }
 
   .overview__wrapper div {
-    margin-top: .5rem;
+    margin-top: 1.5rem;
   }
 
   .overview__title {

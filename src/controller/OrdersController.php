@@ -32,6 +32,9 @@ class OrdersController extends Controller {
         header('Location: index.php?page=checkout');
         exit();
       }
+      if ($_POST['action'] == 'promo') {
+        $this->_handlePromo();
+      }
       header('Location: index.php?page=cart');
       exit();
     }
@@ -53,10 +56,10 @@ class OrdersController extends Controller {
       $_SESSION['cart'][$_POST['product_id'] . '-' . $_POST['option_id']] = array(
         'product' => $product,
         'option' => $_POST['option_id'],
+        'price' => $product['price'],
         'quantity' => $_POST['quantity']
       );
     } else {
-    // $_SESSION['cart'][$_POST['product_id']]['option_id'];
       $_SESSION['cart'][$_POST['product_id']] . '-' . $_POST['product_id']['quantity'] =
       $_SESSION['cart'][$_POST['product_id']] . '-' . $_POST['product_id']['quantity'] + $_POST['quantity'];
     }
@@ -78,6 +81,18 @@ class OrdersController extends Controller {
     }
     $this->_removeWhereQuantityIsZero();
   }
+
+  // PROMOCODE
+  private function _handlePromo() {
+    $_SESSION['promo'] = 'Deze promocode is ongeldig.';
+
+    foreach($_SESSION['cart'] as $product => $info) {
+      if ($info['product']['promocode'] === $_POST['promocode']) {
+        $_SESSION['cart'][$product]['price'] = $info['product']['promoprice'];
+        $_SESSION['promo'] = 'Promocode werd toegepast!';
+      }
+    }
+}
 
   // DELETE WNR 0 QUANTITY
   private function _removeWhereQuantityIsZero() {
@@ -128,7 +143,7 @@ class OrdersController extends Controller {
           'product_name' => $quantity['product']['title'],
           'option_name' => $quantity['product']['name'],
           'quantity' => $quantity['quantity'],
-          'subtotal' => $quantity['product']['price'] * $quantity['quantity']
+          'subtotal' => $quantity['price'] * $quantity['quantity']
         ));
       }
       foreach($data as $order){

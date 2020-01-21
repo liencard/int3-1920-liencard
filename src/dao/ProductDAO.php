@@ -73,7 +73,7 @@ class ProductDAO extends DAO {
   }
 
    public function selectProductByOption($product, $option){
-    $sql = "SELECT `products`.`title`, `products`.`tumbnail`, `products`.`subtitle`, `products`.`id`, `product_options`.`price`, `product_options`.`name`
+    $sql = "SELECT `products`.`title`, `products`.`tumbnail`, `products`.`subtitle`, `products`.`id`, `product_options`.`price`, `product_options`.`name`, `product_options`.`promocode`, `product_options`.`promoprice`
       FROM `products`
       LEFT JOIN `options`
       ON `products`.`option_id` = `options`.`id`
