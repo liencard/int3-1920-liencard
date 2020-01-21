@@ -56,7 +56,7 @@
         <div class="product__buy">
           <p class="product__price"><?php echo $product['priceinfo']; ?></p>
           <!-- <a class="product__btn" href="index.php?page=detail&id=<?php echo $product['id']; ?>" >+ <img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"></a> -->
-          <a class="product__btn" href="index.php?page=detail&id=<?php echo $product['id']; ?>" >Meer info</a>
+          <a class="btn product__btn" href="index.php?page=detail&id=<?php echo $product['id']; ?>" >Meer info</a>
         </div>
       </div>
       <a class="product__link" href="index.php?page=detail&id=<?php echo $product['id']; ?>" ><img class="product__img" srcset=".<?php echo $product['image']; ?>" sizes="15px" src="<?php echo $product['image']; ?>" alt="<?php echo $product['title']; ?>"></a>

@@ -1,15 +1,23 @@
 {
-  const $canvas = document.getElementById('canvas');
-  const ctx = $canvas.getContext('2d');
-  let brushRadius = ($canvas.width / 100) * 5;
-  if (brushRadius < 10) { brushRadius = 10; }
+  let $canvas;
+  let ctx;
+  let brushRadius;
+
 
   const img = new Image();
 
   const init = () => {
-    $canvas.addEventListener(`mousemove`, event => mousemoveHandler(event));
-    $canvas.addEventListener(`touchmove`, event => touchmoveHandler(event));
-
+    $canvas = document.getElementById('canvas');
+    if ($canvas) {
+      ctx = $canvas.getContext('2d');
+      brushRadius = ($canvas.width / 100) * 5;
+      if (brushRadius < 10) { brushRadius = 10; }
+      $canvas.addEventListener(`mousemove`, event => mousemoveHandler(event));
+      $canvas.addEventListener(`touchmove`, event => touchmoveHandler(event));
+      //
+      img.src = '../../assets/beelden/kras-top.png';
+      console.log(img);
+    }
     console.log('longread');
   };
 
@@ -18,8 +26,7 @@
     ctx.drawImage(img, 0, 0, $canvas.width, $canvas.height);
   };
 
-  img.src = '../../assets/beelden/kras-top.png';
-  console.log(img);
+
 
   const detectLeftButton = event => {
     if ('buttons' in event) {

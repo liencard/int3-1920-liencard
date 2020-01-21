@@ -66,8 +66,11 @@
 
   const init = () => {
     const $form = document.querySelector(`form`);
-    $form.noValidate = true;
-    $form.addEventListener(`submit`, handleSubmitForm);
+    if ($form) {
+      $form.noValidate = true;
+      $form.addEventListener(`submit`, handleSubmitForm);
+    }
+
   };
 
   init();

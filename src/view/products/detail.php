@@ -31,7 +31,7 @@
         <?php endforeach; ?>
       </div>
 
-      <div class="options__wrapper options__wrapper--small">
+      <!-- <div class="options__wrapper options__wrapper--small">
         <label>
           <select name="option_id" class="option__wrapper">
             <?php foreach($options as $option): ?>
@@ -47,7 +47,26 @@
             <?php endforeach; ?>
           <select>
         </label>
+      </div> -->
 
+      <div class="priceinfo">
+        <div class="price__default">
+          <p class="price__title">Prijs</p>
+          <p class="price__price"><?php echo $product['priceinfo'] ?></p>
+        </div>
+        <?php if ($product['type'] === 'boek' && $product['id'] === '16' && $product['id'] === '15'  ): ?>
+        <div class="price__default">
+          <p class="price__title">Prijs ebook</p>
+          <p class="price__price">€1,99</p>
+        </div>
+        <div class="price__promo">
+          <p class="price__title">Promo</p>
+          <p class="price__price">€4,99</p>
+        </div>
+        <div class="price__text">
+          <p>Met <span class="bold">kortingscode</span>, te vinden op de flap van HUMO</p>
+        </div>
+        <?php endif; ?>
       </div>
 
       <input class="product__quantity" type="number" name="quantity" value="1" min="1">
@@ -61,6 +80,7 @@
     </form>
 
     <div class="buy__info">
+      <h3>BEZORGING</h3>
       <p>Voor <span class="bold">18:00</span> besteld, <span class="bold">volgende dag</span> geleverd</p>
       <p>Vanaf €50, <span class="bold">gratis thuislevering</span></p>
       <p><span class="bold">Gratis</span> binnen de 30 dagen <span class="bold">retourneren</span></p>
