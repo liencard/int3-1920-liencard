@@ -13,7 +13,7 @@
 
 .clock {
   display: grid;
-  margin-top: 12.5rem;
+  margin-top: calc(var(--spacerMedium) * 4);
 }
 
 .clock__img-wrapper {
@@ -25,7 +25,16 @@
 }
 
 .clock__title {
-  margin-top: -16rem;
+  margin-top: -12rem;
+  max-width: calc(var(--spacerBig) * 6);
+}
+
+@media screen and (min-width: 450px) {
+
+  .clock__title {
+    margin-top: -6rem;
+    max-width: calc(var(--spacerBig) * 10);
+  }
 }
 
 @media screen and (min-width: 740px) {
@@ -57,6 +66,36 @@
     width: 40vw;
     margin-right: 0;
   }
+
+  .clock {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    grid-template-areas: 'clock clock-text';
+    margin-right: calc(var(--spacerSmall) * 2);
+    margin-top: calc(var(--spacerBig) * 4);
+  }
+
+  .clock__wrapper {
+    grid-area: clock-text;
+  }
+
+  .clock__title {
+    margin-top: 0;
+    max-width: 100%;
+    margin-bottom: var(--spacerBig);
+  }
+
+  .clock__img {
+    grid-area: clock;
+    grid-row: span 2;
+  }
+}
+
+@media screen and (min-width: 950px) {
+
+  .clock__img {
+    width: 40vw;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -73,23 +112,15 @@
     width: 45vw;
   }
 
-    .clock {
-    display: grid;
+  .clock {
     grid-template-columns: 1fr 2fr;
-    grid-gap: 2rem;
-    grid-template-areas: 'clock clock-text';
-    margin-right: 14rem;
-    margin-top: 20rem;
-  }
-
-  .clock__wrapper {
-    grid-area: clock-text;
+    margin-right: calc(var(--spacerSmall) * 4);
+    margin-top: calc(var(--spacerBig) * 6);
   }
 
   .clock__title {
-    margin-top: 0;
-    margin-bottom: 7rem;
-    max-width: 100%;
+    margin-bottom: calc(var(--spacerMedium) * 2);
+    margin-top: 10rem;
   }
 
   .clock-text__wrapper {
@@ -104,9 +135,7 @@
   }
 
   .clock__img {
-    grid-area: clock;
     width: 35vw;
-    grid-row: span 2;
   }
 }
 

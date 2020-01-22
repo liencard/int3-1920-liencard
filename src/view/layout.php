@@ -79,6 +79,8 @@
         </div>
       </main>
 
+      <div class="<?php if ($_GET['page'] === 'longread'){ echo ' hidden'; }?>">
+
       <footer class="mod-footer footer-big">
         <nav class="container" role="navigation">
             <ul class="mod-grid mod-footer-top">
@@ -162,6 +164,7 @@
           </ul>
         </nav>
       </footer>
+      </div>
 
       <?php echo $js; ?>
   </body>

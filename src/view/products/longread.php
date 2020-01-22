@@ -56,10 +56,12 @@
       </div>
     </div>
     <div class="clock__img-wrapper">
-      <img srcset="./assets/beelden/clock-mini.gif 357w,
-            ./assets/beelden/clock-big.gif 579w"
-        sizes="30vw"
-        class="clock__img" src="./assets/beelden/clock-big.png" alt="Clock gif animatie">
+      <picture>
+        <source media="(max-width: 740px)" srcset="./assets/beelden/clock-mini.gif 357w" />
+        <source media="(max-width: 2000px)" srcset="./assets/beelden/clock-big.gif 579w" />
+        <img src="./assets/beelden/clock-mini.gif" class="clock__img" alt="Clock gif animatie">
+      </picture>
+
     </div>
   </section>
 
@@ -70,7 +72,7 @@
 
   <div class="scroll__wrapper">
     <section class="morality">
-        <h2 class="part__title morality__title">Ieder voor <br> zichzelf</h2>
+        <h2 class="part__title morality__title">Ieder voor zichzelf</h2>
         <div class="morality-text__wrapper">
           <p class="part__text">McCarthy beweert dat <span class="text__highlight">de samenleving de morele kompassen van de mensen dicteert.</span> Zonder deze maatschappelijke normen, zijn hun persoonlijke normen en moralen niet te onderscheiden van hun eigenbelang.<p>
           <p class="part__text">In het boek zie je hoe, door de <span class="text__highlight">afwezigheid van de menselijke beschaving</span> en de sociale normen, iedereen uitsluitend <span class="text__highlight">handelt uit eigenbelang.</span> Iedereen is egoïstisch en gelooft steevast dat zijn of haar eigen daden correct en gerechtvaarigd zijn.<p>
@@ -132,28 +134,30 @@
     <section class="part scratch">
       <h2 class="hidden">Krassen</h2>
       <img class="scratch__img" srcset="./assets/beelden/krasweg.png" sizes="15px" src="./assets/beelden/krawweg.png" alt="Text met kras het weg">
-      <canvas id="canvas" width="560" height="700"></canvas>
+      <canvas id="canvas" class="canvas" width="560" height="700"></canvas>
     </section>
 
   </div>
 
   <section class="part awards">
-    <h2 class="part__title awards__title">Rijkelijk <br> bekroond <br> boek</h2>
+    <div class="awards__bigwrapper">
+      <h2 class="part__title awards__title">Rijkelijk <br> bekroond <br> boek</h2>
 
-    <div class="awards__text-wrapper">
-      <div class="awards__wrapper">
-        <p class="award_07">The Road wers bekroond met de <span class="text__highlight">Pulitzer Price for Fiction</span></p>
-        <p class="award_08">Verkozen door Entertainment Weekly als één van de <span class="text__highlight">‘beste boeken over de voorbije 25 jaar’</span></p>
+      <div class="awards__text-wrapper">
+        <div class="awards__wrapper">
+          <p class="award_07">The Road wers bekroond met de <span class="text__highlight">Pulitzer Price for Fiction</span></p>
+          <p class="award_08">Verkozen door Entertainment Weekly als één van de <span class="text__highlight">‘beste boeken over de voorbije 25 jaar’</span></p>
+        </div>
+
+        <h3 class="awards__subtitle">The Road in 2019</h3>
+        <p class="part__text">Zelf vorig jaar, in 2019, werd het boek meerdere malen genomineerd op verschillende lijsten. Het boek boek heeft duidelijk, tot op vandaag, nog steeds een hoog aanzien. <p>
+        <ul class="awards__list">
+          <li class="award__item">BBC News vernoemde The Road in hun lijst van <span class="text__highlight">‘100 meest invloedrijke romans’.</span></li>
+          <li class="award__item year__image">The Guardian rangschikte The Road 17e op de lijst van <span class="text__highlight">‘100 beste boeken van de 21ste eeuw’.</span></li>
+        </ul>
       </div>
-
-      <h3 class="awards__subtitle">The Road in 2019</h3>
-      <p class="part__text">Zelf vorig jaar, in 2019, werd het boek meerdere malen genomineerd op verschillende lijsten. Het boek boek heeft duidelijk, tot op vandaag, nog steeds een hoog aanzien. <p>
-      <ul class="awards__list">
-        <li class="award__item">BBC News vernoemde The Road in hun lijst van <span class="text__highlight">‘100 meest invloedrijke romans’.</span></li>
-        <li class="award__item item__image">The Guardian rangschikte The Road 17e op de lijst van <span class="text__highlight">‘100 beste boeken van de 21ste eeuw’.</span></li>
-      </ul>
-    </div>
-    <img class="marker__img" srcset="./assets/beelden/markers.png" sizes="15px" src="./assets/beelden/markers.png" alt="Markers">
+      <img class="marker__img" srcset="./assets/beelden/markers.png" sizes="15px" src="./assets/beelden/markers.png" alt="Markers">
+      </div>
   </section>
 
   <section class="part promo">
@@ -161,12 +165,12 @@
       <h2 class="part__title promo__title">Call to <br> action</h2>
       <p class="part__text">The Road is  <span class="text__highlight">meer dan gewoon een verhaal over een post- apocalyptische wereld.</span> Het gaat over de liefde tussen vader en zoon. Het gaat over de moed om je moralen te behouden in onmenselijke omstandigheden.<p>
       <p class="part__text">The Road is een somber verhaal over een een stervende planeet. Het zal je laten nadenken over het lot van de menselijkheid. Maar als je het nieuws op zet hoor je niet veel beter.<p>
-      <div class="button__img-wrapper">
+      <a href="index.php?page=detail&id=8"><div class="button__img-wrapper">
         <img srcset="./assets/beelden/button.png 326w,
               ./assets/beelden/button.png 753w"
           sizes="50vw"
           class="button__img" src="./assets/beelden/button.png" alt="Buy book button">
-      </div>
+      </div></a>
     </div>
     <div class="promo__img-wrapper">
       <img srcset="./assets/beelden/book-mini.png 326w,
@@ -178,7 +182,10 @@
 
   <section class="part footer">
     <h2 class="hidden">Footer</h2>
+    <div class="footer-wraper">
     <p class="footer__text">mogelijk gemaakt door</p>
+    <img class="white__humo" srcset="./assets/beelden/humo-white.svg" sizes="15px" src="./assets/beelden/humo-white.sg" alt="White HUMO logo">
+    </div>
   </section>
 
 </div>

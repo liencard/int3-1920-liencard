@@ -1,0 +1,160 @@
+.morality-quote {
+  margin-top: calc(var(--spacerBig) * 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title__morality-quote {
+  text-align: center;
+  font-size: 6rem;
+  line-height: 5.5rem;
+  background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.morality {
+  padding-bottom: calc(var(--spacerBig) * 2) 0;
+  background-color: black;
+}
+
+.morality-text__wrapper, .morality__title {
+  padding: 0 2rem;
+}
+
+.morality__img {
+  width: 100vw;
+}
+
+@media screen and (min-width: 500px) {
+
+  .morality-quote {
+    margin-top: calc(var(--spacerBig) * 4);
+  }
+
+  .title__morality-quote {
+    font-size: 8rem;
+    line-height: 7.5rem;
+  }
+
+  .morality__title {
+    max-width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .scroll__wrapper {
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 650px) {
+
+  .title__morality-quote {
+    font-size: 12rem;
+    line-height: 10rem;
+  }
+
+  .morality {
+    padding-top: calc(var(--spacerBig) * 4);
+  }
+
+  .morality__title, .morality-text__wrapper {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  .morality__title {
+    margin-bottom: 4rem;
+  }
+
+  .morality__img {
+    margin-top: var(--spacerBig);
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .morality {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 50vw 42vw;
+    grid-gap: 4rem;
+    grid-template-areas:
+      'title-morality text-morality'
+      'img-morality text-morality';
+  }
+
+  .morality__title {
+    grid-area: title-morality;
+    text-align: right;
+  }
+
+  .morality-text__wrapper {
+    grid-area: text-morality;
+    width: 100%;
+  }
+
+  .morality__img-wrapper {
+    margin-top: -10rem;
+  }
+
+  .morality__img {
+    grid-area: img-morality;
+    width: 50vw;
+  }
+
+  .scroll__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (min-width: 880px) {
+
+  .morality-quote {
+    width: 80vw;
+    margin: 0 auto;
+    padding-bottom: calc(var(--spacerBig) * 4);
+    margin-top: calc(var(--spacerBig) * 5);
+  }
+
+  .morality {
+    padding-top: calc(var(--spacerBig) * 2);
+  }
+
+  .morality__title {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  .title__morality-quote {
+    font-size: 15rem;
+    line-height: 12rem;
+  }
+
+  .morality {
+    width: 100vw;
+    grid-gap: 7.5rem;
+  }
+
+  .morality-text__wrapper {
+    padding-right: 14rem;
+  }
+
+  .morality__img-wrapper {
+    margin-top: -12rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .morality-quote {
+    width: 60vw;
+  }
+}

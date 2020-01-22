@@ -12,11 +12,14 @@
 @import './css/components/payment.css';
 @import './css/components/confirmation.css';
 @import './css/components/processbar.css';
-@import './css/longread/klad.css';
 @import './css/longread/basis.css';
 @import './css/longread/header.css';
 @import './css/longread/quotes.css';
 @import './css/longread/intro.css';
+@import './css/longread/morality.css';
+@import './css/longread/goodbad.css';
+@import './css/longread/awards.css';
+@import './css/longread/promo.css';
 
 html {
   box-sizing: border-box;
