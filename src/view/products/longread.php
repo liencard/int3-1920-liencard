@@ -1,21 +1,21 @@
 <div class="content longread">
   <section class="header">
-
-    <!-- <div class="header__wrapper">
+    <div class="header__wrapper">
       <h1 class="header__title">De Weg</h1>
       <p class="header__subtitle">Cormac McCarthy</p>
-    </div> -->
+    </div>
+    <img src="assets/beelden/arrow-down2.png" class="header__arrow" alt="arrow downward">
 
-    <div class="header__img">
+    <!-- <div class="header__img">
       <picture>
         <source media="(max-width: 450px)" srcset="./assets/beelden/header-mobile.png 375w" />
         <source media="(max-width: 800px)" srcset="./assets/beelden/header-tablet.png 1194w" />
         <source media="(min-width: 1400px)" srcset="./assets/beelden/header-desktop.png 1438w" />
         <img class="header__image" src="assets/beelden/header-tablet.png" alt="The Road header image">
       </picture>
-    </div>
-
+    </div> -->
   </section>
+
   <section class='quotes'>
     <h2 class="hidden">Quotes</h2>
 
@@ -37,16 +37,19 @@
     </div>
     <div class="intro__img-wrapper">
       <picture>
-        <source media="(max-width: 600px)" srcset="./assets/beelden/fallenworld-mobile.png 338w" />
-        <source media="(min-width: 600px)" srcset="./assets/beelden/fallenworld-desktop.png 652w" />
-        <img src="assets/beelden/fallenworld-desktop.png" class="intro__img" alt="Image of a post-apocalyptic landscape">
+        <source media="(max-width: 500px)" srcset="./assets/beelden/fallenworld338.png 338w" />
+        <source media="(max-width: 740px)" srcset="./assets/beelden/fallenworld550.png 523w" />
+        <source media="(max-width: 900px)" srcset="./assets/beelden/fallenworld500_verticaal.png 500w" />
+        <source media="(max-width: 1100px)" srcset="./assets/beelden/fallenworld950_square.png 950w" />
+        <source media="(min-width: 2000px)" srcset="./assets/beelden/fallenworld652.png 652w" />
+        <img src="assets/beelden/fallenworld550.png" class="intro__img" alt="Image of a post-apocalyptic landscape">
       </picture>
     </div>
   </section>
 
   <section class="part clock">
     <div class="clock__wrapper">
-      <h2 class="part__title clock__title">Om 1:17 <br> bleven de klokken stilstaan.</h2>
+      <h2 class="part__title clock__title">Om 1:17 bleven de klokken stilstaan.</h2>
       <div class="clock-text__wrapper">
         <p class="part__text">Gevolgd door<span class="text__highlight">“een lange zeis van licht en vervolgens een reeks van diepe schokken”.</span><p>
         <p class="part__text">Dit was het begin van het einde van de wereld. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis eleifend justo, id varius elit fringilla eget<p>

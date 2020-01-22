@@ -44,9 +44,15 @@
                   </li>
                   <li class="primary-nav__list-item"> <a href="/tv-en-film" data-gtm="main-nav/tvfilm/text" class="primary-nav__link">Tv/Film</a> </li>
                   <li class="primary-nav__list-item"> <a href="/muziek" data-gtm="main-nav/muziek/text" class="primary-nav__link">Muziek</a> </li>
-                  <li class="primary-nav__list-item"> <a href="index.php" data-gtm="main-nav/muziek/text" class="primary-nav__link active">Shop</a> </li>
+                  <li class="primary-nav__list-item"> <a href="index.php" data-gtm="main-nav/muziek/text" class="primary-nav__link  <?php if ($_GET['page'] === 'index' || $_GET['page'] === 'detail'){ echo ' active'; }?>">Shop</a> </li>
                   <li class="cart-icon">
-                    <a class="" href="index.php?page=cart" ><?php echo $numItems;?><img srcset="./assets/img/cart-black.svg" sizes="16px" src="./assets/img/cart-black.svg" alt="cart vector"></a>
+                    <a class="" href="index.php?page=cart" ><?php echo $numItems;?>
+                    <?php if ($_GET['page'] != 'index' || $_GET['page'] != 'detail'):?>
+                      <img srcset="./assets/img/cart-red.svg" sizes="16px" src="./assets/img/cart-red.svg" alt="cart vector">
+                    <?php else: ($_GET['page'] == 'index' || $_GET['page'] == 'detail')?>
+                      <img srcset="./assets/img/cart-black.svg" sizes="16px" src="./assets/img/cart-black.svg" alt="cart vector">
+                     <?php endif; ?>
+                    </a>
                   </li>
               </ul>
             </div>

@@ -17,7 +17,7 @@
   </article>
   <article class="highlight highlight__abbo">
     <div class="highlight__wrapper">
-      <h3 class="highlight__title">Lees geen andere onzin, <span class="color--red">abonneer je nu!<span></h3>
+      <h3 class="highlight__title">Lees geen andere onzin, <span class="color--red">abonneer je nu!</span></h3>
       <a class="highlight__btn" href="index.php?page=detail&id=15">Bekijk aanbod</a>
     </div>
     <img class="highlight__img highlight__img-abbo" srcset="./assets/img/abbo-1.jpg" sizes="15px" src="./assets/img/abbo-1.jpg" alt="boekcover The Road">

@@ -29,6 +29,7 @@
 
 
   const detectLeftButton = event => {
+    console.log(event);
     if ('buttons' in event) {
       return event.buttons === 1;
     } else if ('which' in event) {
