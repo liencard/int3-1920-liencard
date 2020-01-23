@@ -180,9 +180,9 @@
 
 @media screen and (max-width: 820px) {
 
-  .options__wrapper--big {
+  /* .options__wrapper--big {
     display: none;
-  }
+  } */
 
   .options__wrapper--small {
     display: inline-block;
