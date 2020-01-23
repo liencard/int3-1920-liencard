@@ -16,17 +16,12 @@
       $canvas.addEventListener(`touchmove`, event => touchmoveHandler(event));
       //
       img.src = '../../assets/beelden/kras-top.png';
-      console.log(img);
+      img.addEventListener('load', event => {
+        ctx.drawImage(img, 0, 0, $canvas.width, $canvas.height);
+      });
     }
     console.log('longread');
   };
-
-  // START NIET CORRECT
-  img.onload = function () {
-    ctx.drawImage(img, 0, 0, $canvas.width, $canvas.height);
-  };
-
-
 
   const detectLeftButton = event => {
     console.log(event);

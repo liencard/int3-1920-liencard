@@ -3,6 +3,9 @@ require('./style.css');
 import Product from './js/model/Product.js';
 import './js/validate.js';
 import './js/scratch.js';
+//import './js/lalala.js';
+//import './js/text.js';
+
 
 {
   const $products = document.querySelector('.products');
