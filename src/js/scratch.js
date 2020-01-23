@@ -21,6 +21,17 @@
       });
     }
     console.log('longread');
+
+    // SCROLL FUNCTION
+    window.addEventListener(`scroll`, e => scrollbarHandler(e));
+  };
+
+  const scrollbarHandler = () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById('myBar').style.width = scrolled + '%';
+    console.log('test');
   };
 
   const detectLeftButton = event => {

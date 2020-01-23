@@ -1,4 +1,7 @@
 <div class="content longread">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
   <section class="header">
     <div class="header__wrapper">
       <h1 class="header__title">De Weg</h1>
