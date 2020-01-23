@@ -18,7 +18,7 @@ class Product {
         </div>
         <div class="product__buy">
           <p class="product__price">${this.priceinfo}</p>
-          <a class="product__btn" href="index.php?page=detail&id=${this.id}" >+ <img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"></a>
+          <a class="btn product__btn" href="index.php?page=detail&id=${this.id}" >Meer info</a>
         </div>
       </div>
       <a class="product__link" href="index.php?page=detail&id=${this.id}" ><img class="product__img" srcset=".${this.image}" sizes="15px" src="${this.image}" alt="${this.title}"></a>

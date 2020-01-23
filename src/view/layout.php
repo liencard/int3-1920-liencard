@@ -44,12 +44,12 @@
                   </li>
                   <li class="primary-nav__list-item"> <a href="/tv-en-film" data-gtm="main-nav/tvfilm/text" class="primary-nav__link">Tv/Film</a> </li>
                   <li class="primary-nav__list-item"> <a href="/muziek" data-gtm="main-nav/muziek/text" class="primary-nav__link">Muziek</a> </li>
-                  <li class="primary-nav__list-item"> <a href="index.php" data-gtm="main-nav/muziek/text" class="primary-nav__link  <?php if ($_GET['page'] === 'index' || $_GET['page'] === 'detail'){ echo ' active'; }?>">Shop</a> </li>
+                  <li class="primary-nav__list-item"> <a href="index.php" data-gtm="main-nav/muziek/text" class="primary-nav__link  <?php if ($_GET['page'] === 'home' || $_GET['page'] === 'detail'){ echo ' active'; }?>">Shop</a> </li>
                   <li class="cart-icon">
                     <a class="" href="index.php?page=cart" ><?php echo $numItems;?>
-                    <?php if ($_GET['page'] != 'index' || $_GET['page'] != 'detail'):?>
+                    <?php if ($_GET['page'] != 'home' && $_GET['page'] != 'detail'):?>
                       <img srcset="./assets/img/cart-red.svg" sizes="16px" src="./assets/img/cart-red.svg" alt="cart vector">
-                    <?php else: ($_GET['page'] == 'index' || $_GET['page'] == 'detail')?>
+                    <?php else: ($_GET['page'] == 'home' || $_GET['page'] == 'detail')?>
                       <img srcset="./assets/img/cart-black.svg" sizes="16px" src="./assets/img/cart-black.svg" alt="cart vector">
                      <?php endif; ?>
                     </a>
@@ -58,10 +58,10 @@
             </div>
           </nav>
 
-          <nav class="hamburger-nav" role="navigation">
-            <img class="nav__burger" srcset="./assets/img/hamburger-icon.svg" sizes="5px" src="./assets/img/hamburger-icon.svg" alt="Logo HUMO navigatie">
-            <a class="" href="index.php" ><img class="nav__logo" srcset="./assets/img/humo-logo.svg" sizes="30px" src="./assets/img/humo-logo.svg" alt="Logo HUMO navigatie"></a>
-            <a class="nav__cart--link" href="index.php?page=cart" ><?php echo $numItems;?><img class="nav__cart" srcset="./assets/img/cart-black.svg" sizes="16px" src="./assets/img/cart-black.svg" alt="cart vector"></a>
+        <nav class="hamburger-nav" role="navigation">
+          <a href="index.php" ><img class="nav__burger" srcset="./assets/img/hamburger-icon.svg" sizes="5px" src="./assets/img/hamburger-icon.svg" alt="Logo HUMO navigatie"></a>
+          <a href="index.php" ><img class="nav__logo" srcset="./assets/img/humo-logo.svg" sizes="30px" src="./assets/img/humo-logo.svg" alt="Logo HUMO navigatie"></a>
+          <a class="nav__cart--link" href="index.php?page=cart" ><?php echo $numItems;?><img class="nav__cart" srcset="./assets/img/cart-black.svg" sizes="16px" src="./assets/img/cart-black.svg" alt="cart vector"></a>
         </nav>
       </header>
 

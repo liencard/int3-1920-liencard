@@ -3,7 +3,6 @@
   let ctx;
   let brushRadius;
 
-
   const img = new Image();
 
   const init = () => {
@@ -12,10 +11,11 @@
       ctx = $canvas.getContext('2d');
       brushRadius = ($canvas.width / 100) * 5;
       if (brushRadius < 10) { brushRadius = 10; }
-      $canvas.addEventListener(`mousemove`, event => mousemoveHandler(event));
-      $canvas.addEventListener(`touchmove`, event => touchmoveHandler(event));
+      $canvas.addEventListener(`mousemove`, e => mousemoveHandler(e));
+      $canvas.addEventListener(`touchmove`, e => touchmoveHandler(e));
       //
       img.src = '../../assets/beelden/kras-top.png';
+
       img.addEventListener('load', event => {
         ctx.drawImage(img, 0, 0, $canvas.width, $canvas.height);
       });
@@ -35,16 +35,16 @@
   };
   // EINDE NIET CORRECT
 
-  const mousemoveHandler = event => {
-    const brushPos = getBrushPos(event.clientX, event.clientY);
-    const leftBut = detectLeftButton(event);
+  const mousemoveHandler = e => {
+    const brushPos = getBrushPos(e.clientX, e.clientY);
+    const leftBut = detectLeftButton(e);
     if (leftBut == 1) {
       drawDot(brushPos.x, brushPos.y);
     }
   };
 
-  const touchmoveHandler = event => {
-    event.preventDefault();
+  const touchmoveHandler = e => {
+    e.preventDefault();
     const touch = event.targetTouches[0];
     if (touch) {
       const brushPos = getBrushPos(touch.pageX, touch.pageY);

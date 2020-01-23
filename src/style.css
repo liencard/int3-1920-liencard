@@ -3,6 +3,7 @@
 @import './css/vars.css';
 @import './css/helpers.css';
 @import './css/typography.css';
+/* NAVIGATION */
 @import './css/components/navigation.css';
 @import './css/components/footer.css';
 @import './css/components/product.css';
@@ -12,6 +13,7 @@
 @import './css/components/payment.css';
 @import './css/components/confirmation.css';
 @import './css/components/processbar.css';
+/* LONGREAD */
 @import './css/longread/basis.css';
 @import './css/longread/header.css';
 @import './css/longread/quotes.css';

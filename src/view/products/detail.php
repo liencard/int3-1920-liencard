@@ -18,10 +18,10 @@
     <form action="index.php?page=cart" method="post" class="form__option">
       <input type="hidden" name="product_id" value="<?php echo $product['id'];?>" />
       <div class="options__wrapper options__wrapper--big">
-        <?php foreach($options as $option): ?>
+        <?php foreach($options as $index => $option): ?>
           <?php if ($option['name'] != 'No option'): ?>
             <label>
-              <input class="option__input" type="radio" name="option_id" value="<?php echo $option['id'] ?>">
+              <input class="option__input" type="radio" name="option_id" value="<?php echo $option['id'] ?>" <?php if ($index === 0) { echo 'checked';}?>>
               <div class="option__wrapper">
                 <span><?php echo $option['name'] ?></span>
                 <span>€<?php echo $option['price'] ?></span>
@@ -31,30 +31,12 @@
         <?php endforeach; ?>
       </div>
 
-      <!-- <div class="options__wrapper options__wrapper--small">
-        <label>
-          <select name="option_id" class="option__wrapper">
-            <?php foreach($options as $option): ?>
-            <?php if ($option['name'] != 'No option'): ?>
-
-            <option name="option_id"  value="<?php echo $option['id']; ?>">
-              <div class="option__wrapper">
-                <span><?php echo $option['name'] ?></span>
-                <span>€<?php echo $option['price'] ?></span>
-              </div>
-            </option>
-            <?php endif; ?>
-            <?php endforeach; ?>
-          <select>
-        </label>
-      </div> -->
-
       <div class="priceinfo">
         <div class="price__default">
           <p class="price__title">Prijs</p>
           <p class="price__price"><?php echo $product['priceinfo'] ?></p>
         </div>
-        <?php if ($product['type'] === 'boek' || $product['id'] == 16 || $product['id'] == 15  ): ?>
+        <?php if ($product['type'] === 'boek' && $product['id'] != 16 && $product['id'] != 15  ): ?>
         <div class="price__default">
           <p class="price__title">Prijs ebook</p>
           <p class="price__price">€1,99</p>

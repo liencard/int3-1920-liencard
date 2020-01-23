@@ -136,19 +136,16 @@
       <img class="scratch__img" srcset="./assets/beelden/krasweg.png" sizes="15px" src="./assets/beelden/krawweg.png" alt="Text met kras het weg">
       <canvas id="canvas" class="canvas" width="560" height="700"></canvas>
     </section>
-
   </div>
 
   <section class="part awards">
     <div class="awards__bigwrapper">
       <h2 class="part__title awards__title">Rijkelijk <br> bekroond <br> boek</h2>
-
       <div class="awards__text-wrapper">
         <div class="awards__wrapper">
           <p class="award_07">The Road wers bekroond met de <span class="text__highlight">Pulitzer Price for Fiction</span></p>
           <p class="award_08">Verkozen door Entertainment Weekly als één van de <span class="text__highlight">‘beste boeken over de voorbije 25 jaar’</span></p>
         </div>
-
         <h3 class="awards__subtitle">The Road in 2019</h3>
         <p class="part__text">Zelf vorig jaar, in 2019, werd het boek meerdere malen genomineerd op verschillende lijsten. Het boek boek heeft duidelijk, tot op vandaag, nog steeds een hoog aanzien. <p>
         <ul class="awards__list">
@@ -157,7 +154,7 @@
         </ul>
       </div>
       <img class="marker__img" srcset="./assets/beelden/markers.png" sizes="15px" src="./assets/beelden/markers.png" alt="Markers">
-      </div>
+    </div>
   </section>
 
   <section class="part promo">

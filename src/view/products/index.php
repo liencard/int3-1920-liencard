@@ -1,4 +1,3 @@
-<!-- <div class="webshop"> -->
 <div class="header__webshop">
   <h1 class="title">Webshop</h1>
 </div>
@@ -10,15 +9,14 @@
     <div class="highlight__wrapper">
       <h3 class="highlight__title">Promoboek van de week</h3>
       <p class="highlight__subtitle">Vind je kortingscode op de flap <br> van HUMO deze week</p>
-      <!-- <a class="highlight__btn" href="index.php?page=detail&id=8">Meer info</a> -->
-      <a class="highlight__btn" href="index.php?page=longread">Meer info</a>
+      <a class="btn highlight__btn" href="index.php?page=longread">Meer info</a>
     </div>
     <img class="highlight__img" srcset="./assets/img/the-road-1.jpg" sizes="15px" src="./assets/img/the-road-1.jpg" alt="boekcover The Road">
   </article>
   <article class="highlight highlight__abbo">
     <div class="highlight__wrapper">
       <h3 class="highlight__title">Lees geen andere onzin, <span class="color--red">abonneer je nu!</span></h3>
-      <a class="highlight__btn" href="index.php?page=detail&id=15">Bekijk aanbod</a>
+      <a class="btn highlight__btn" href="index.php?page=detail&id=15">Bekijk aanbod</a>
     </div>
     <img class="highlight__img highlight__img-abbo" srcset="./assets/img/abbo-1.jpg" sizes="15px" src="./assets/img/abbo-1.jpg" alt="boekcover The Road">
   </article>
@@ -55,7 +53,6 @@
         </div>
         <div class="product__buy">
           <p class="product__price"><?php echo $product['priceinfo']; ?></p>
-          <!-- <a class="product__btn" href="index.php?page=detail&id=<?php echo $product['id']; ?>" >+ <img srcset="./assets/img/cart.svg" sizes="16px" src="./assets/img/cart.svg" alt="cart vector"></a> -->
           <a class="btn product__btn" href="index.php?page=detail&id=<?php echo $product['id']; ?>" >Meer info</a>
         </div>
       </div>
@@ -63,4 +60,4 @@
     </article>
   <?php endforeach; ?>
 </section>
-<!-- </div> -->
+
