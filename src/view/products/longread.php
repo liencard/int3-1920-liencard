@@ -11,36 +11,21 @@
   </section>
 
   <div class="progress__container">
-
     <div class="processbar--wrapper">
-      <p>Quotes</p>
       <a class="section-link" href="#section-1"><div class="process-circle"></div></a>
       <div class="process-line"></div>
-
-      <p>Intro</p>
       <a class="section-link" href="#section-2"><div class="process-circle"></div></a>
       <div class="process-line"></div>
-
-      <p>Het begin</p>
       <a class="section-link" href="#section-3"><div class="process-circle"></div></a>
       <div class="process-line"></div>
-
-      <p>Moraliteit</p>
       <a class="section-link" href="#section-4"><div class="process-circle"></div></a>
       <div class="process-line"></div>
-
-      <p>Goed vs Slecht</p>
       <a class="section-link" href="#section-5"><div class="process-circle"></div></a>
       <div class="process-line"></div>
-
-      <p>Awards</p>
       <a class="section-link" href="#section-6"><div class="process-circle"></div></a>
       <div class="process-line"></div>
-
-      <p>Action</p>
       <a class="section-link" href="#section-7"><div class="process-circle"></div></a>
     </div>
-
   </div>
 
   <section class='quotes' id="section-1">
@@ -55,12 +40,18 @@
   </section>
 
   <section class="part intro" id="section-2">
-    <h2 class="part__title intro__title">Lorum Ipsum</h2>
+    <h2 class="part__title intro__title">Verwoeste beschaving</h2>
     <div class="intro-text__wrapper">
       <p class="part__text">Volg het verhaal van een vader en zoon, die in een <span class="text__highlight">post-apocalyptische wereld</span>, een tocht afleggen naar het zuiden. In hoop de winter zo te kunnen ontsnappen en te overleven.<p>
-      <p class="part__text"><span class="text__highlight">De wereld is volledig vergaan:</span> bijna alle dieren planten zijn uitgestorven, de lucht zit vol met as en de aarde is volledig verbrand en onvruchtbaar. ’s Nachts is het er koud, koud genoeg om stenen te breken en wanneer er sneeuw valt is het grijs.<p>
+      <p class="part__text"><span class="text__highlight">De wereld is volledig vergaan:</span> bijna alle dieren en planten zijn uitgestorven, de lucht zit vol met as en de aarde is volledig verbrand en onvruchtbaar. ’s Nachts is het er koud, koud genoeg om stenen te breken en wanneer er sneeuw valt is het grijs.<p>
       <p class="part__text">Onderweg worstelen ze met <span class="text__highlight">honger, ziekte en de dreiging van dieven en kannibalen.</span> Het eten is schaars. Zo schaars dat de meeste mensen zijn overgaan tot kannibalisme. Ze willen er alles aan doen om te blijven leven en hebben al hun moralen volledig achtergelaten.<p>
       <p class="part__text"><span class="text__highlight">In een wereld waar de beschaving volledig verwoest is – hebben ze enkel elkaar.</span><p>
+      <a href="index.php?page=detail&id=8"><div class="button__img-wrapper">
+        <img srcset="./assets/beelden/button.png 326w,
+              ./assets/beelden/button.png 753w"
+          sizes="50vw"
+          class="button__img" src="./assets/beelden/button.png" alt="Buy book button">
+      </div></a>
     </div>
     <div class="intro__img-wrapper">
       <picture>
@@ -79,7 +70,7 @@
       <h2 class="part__title clock__title">Om 1:17 bleven de klokken stilstaan.</h2>
       <div class="clock-text__wrapper">
         <p class="part__text">Gevolgd door<span class="text__highlight">“een lange zeis van licht en vervolgens een reeks van diepe schokken”.</span><p>
-        <p class="part__text">Dit was het begin van het einde van de wereld. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis eleifend justo, id varius elit fringilla eget<p>
+        <p class="part__text">Dit was het begin van het einde van de wereld. Hoe overleef je in een wereld, die volledig vergaan is? Vooral, hoe behoud je je moralen in zo'n uitzichtloze wereld...<p>
       </div>
     </div>
     <div class="clock__img-wrapper">
@@ -98,12 +89,14 @@
   </section>
 
   <div class="scroll__wrapper">
+
     <section class="morality">
       <h2 class="part__title morality__title">Ieder voor zichzelf</h2>
       <div class="morality-text__wrapper">
         <p class="part__text">McCarthy beweert dat <span class="text__highlight">de samenleving de morele kompassen van de mensen dicteert.</span> Zonder deze maatschappelijke normen, zijn hun persoonlijke normen en moralen niet te onderscheiden van hun eigenbelang.<p>
         <p class="part__text">In het boek zie je hoe, door de <span class="text__highlight">afwezigheid van de menselijke beschaving</span> en de sociale normen, iedereen uitsluitend <span class="text__highlight">handelt uit eigenbelang.</span> Iedereen is egoïstisch en gelooft steevast dat zijn of haar eigen daden correct en gerechtvaarigd zijn.<p>
         <p class="part__text">De man kijkt alleen naar zijn zoon en zichzelf. Hierdoor, ziet hij al de andere overlevers als hun vijanden. Volgens hem zijn zij “de goede” en al de rest zijn “de slechte”.<p>
+        <img class="morality__arrow" srcset="./assets/beelden/arrow-right.gif" sizes="15px" src="./assets/beelden/arrow-right.gif" alt="Animated arrow direction to right">
       </div>
       <div class="morality__img-wrapper">
         <picture>
@@ -154,8 +147,8 @@
 
     <section class="part struggle">
       <h2 class="part__title struggle__title">Innerlijk strijd</h2>
-      <p class="part__text">Doorheen het verhaal zie je de strijd van de man om één van “de goed” te blijven, om te doen wat goed is, in een wereld waarin de meeste mensen hun moralen volledig hebben achtergelaten.<p>
-      <p class="part__text">Nullam dictum turpis in maximus malesuada. Nam mollis, felis ut condimentum convallis, nisl diam tincidunt nibh, at semper tortor.<p>
+      <p class="part__text">Doorheen het verhaal volg je de strijd van de vader om één van “de goed” te blijven, om te doen wat goed is, in een wereld waarin de meeste mensen hun moralen volledig hebben achtergelaten.<p>
+      <p class="part__text">The Road dwingt de personages en de lezers, om de gevolgen van zowel medelijden als wreedheid af te wegen. De morele kloof van, "Ontmenselijk ik anderen voor mijn eigen overleving?"<p>
     </section>
 
     <section class="part scratch">
@@ -190,7 +183,7 @@
           <p class="review__text">Het is aangrijpend, beangstigend en uitermate mooi. Misschien wel het beste boek van dit decenia, punt.</p>
         </div>
         <div class="review">
-          <p class="review__text">verhaal dat je bij blijft</p>
+          <p class="review__text">Verhaal dat je bij blijft</p>
           <a class="marker__link"><img class="img__marker" srcset="./assets/beelden/marker2.png" sizes="15px" src="./assets/beelden/marker2.png" alt="Marker line single"></a>
         </div>
         <div class="review">
@@ -201,7 +194,7 @@
           <p class="review__text">Wonderschone Gruwelijkheid</p>
         </div>
         <div class="review">
-          <p class="review__text">laat een diepe indruk na</p>
+          <p class="review__text">Laat een diepe indruk na</p>
           <a class="marker__link"><img class="img__marker" srcset="./assets/beelden/marker4.png" sizes="15px" src="./assets/beelden/marker4.png" alt="Marker line 2"></a>
         </div>
       </div>

@@ -29,6 +29,10 @@
   width: 100vw;
 }
 
+.morality__arrow {
+  display: hidden;
+}
+
 @media screen and (min-width: 500px) {
 
   .morality-quote {
@@ -86,6 +90,13 @@
     grid-template-areas:
       'title-morality text-morality'
       'img-morality text-morality';
+  }
+
+  .morality__arrow {
+    display: inline;
+    width: 15vw;
+    align-self: center;
+    justify-self: center;
   }
 
   .morality__title {

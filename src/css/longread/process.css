@@ -9,7 +9,6 @@
 .processbar--wrapper {
   display: grid;
   grid-column-gap: .5rem;
-  grid-template-columns: 8rem 3rem;
   grid-template-rows: auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto;
   justify-items: center;
   align-items: center;
@@ -17,31 +16,16 @@
   height: 60rem;
 }
 
-.processbar--wrapper p {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  text-transform: uppercase;
-  text-align: right;
-  align-self: flex-end;
-  /* display: none; */
-}
-
-/* .process-link:hover + .ddd {
-  display: inherit;
-} */
-
 .process-circle {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
   background-color: white;
-  grid-column: 2/ span 1;
 }
 
 .process-line {
   height: 100%;
   border-right: .2rem dotted white;
-  grid-column: 2/ span 1;
 }
 
 .current {

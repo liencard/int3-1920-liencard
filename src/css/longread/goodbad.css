@@ -211,7 +211,7 @@
     flex-direction: column;
     justify-content: flex-end;
     min-width: calc(var(--spacerBig) * 9);
-    padding-bottom: var(--spacerBig);
+    padding-bottom: calc(var(--spacerBig) * 4);
     margin-right: calc(var(--spacerBig) * 5);
   }
 
