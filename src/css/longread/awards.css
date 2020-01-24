@@ -70,19 +70,55 @@
   margin-bottom: 2rem;
 }
 
-.year__image::after {
+.year__image::before {
   content: '';
   position: absolute;
   background-image: url(../../assets/beelden/2019.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 30rem;
-  height: 10rem;
+  width: 10rem;
+  height: 4rem;
 }
 
-.marker__img {
-  /* width: 95vw; */
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  width: 85vw;
+  margin: 0 auto;
   margin-top: 10rem;
+}
+
+.hover__arrow {
+  display: none;
+}
+
+.review {
+  display: grid;
+}
+
+.review__text {
+  font-family: var(--fontTitleLongread);
+  font-weight: var(--fontWeightRegular);
+  font-size: 3.5rem;
+  text-align: center;
+  align-self: center;
+
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.marker__link {
+  grid-row: 1;
+  grid-column: 1;
+
+  &:hover {
+    display: none;
+  }
+}
+
+.img__marker {
+  width: 100%;
 }
 
 @media screen and (min-width: 560px) {
@@ -94,6 +130,10 @@
   .awards__bigwrapper {
     width: 70vw;
     margin: 0 auto;
+  }
+
+  .reviews {
+    width: 70vw;
   }
 }
 
@@ -110,7 +150,8 @@
     grid-gap: 5rem;
     grid-template-areas:
       'title-awards text-awards'
-      'img-awards text-awards';
+      'review-awards text-awards'
+      'review-awards hover-arrow';
     width: 100%;
   }
 
@@ -118,6 +159,7 @@
     grid-area: title-awards;
     margin-top: 8rem;
     max-width: 100%;
+    justify-self: left;
   }
 
   .awards__wrapper {
@@ -128,15 +170,21 @@
     grid-area: text-awards;
   }
 
-  .marker__img {
-    grid-area: img-awards;
-    width: 30vw;
-    margin-top: 0;
-  }
-
   .year__image::after {
     width: 20rem;
     height: 10rem;
+  }
+
+  .reviews {
+    grid-area: review-awards;
+    width: 40vw;
+    margin-top: 0;
+  }
+
+  .hover__arrow {
+    grid-area: hover-arrow;
+    display: inline;
+    width: 30vw;
   }
 }
 
@@ -145,11 +193,22 @@
   .awards__bigwrapper {
     padding: 20rem 14rem;
     grid-gap: 7.5rem;
+    grid-row-gap: 0;
     margin-top: 30rem;
+  }
+
+  .awards__wrapper {
+    margin-top: 20rem;
   }
 
   .year__image::after {
     width: 30rem;
     height: 15rem;
+  }
+
+  .reviews {
+    width: 30vw;
+    grid-template-rows: 14rem 10rem 8rem 6rem 9rem 10rem;
+    margin-top: 5rem;
   }
 }

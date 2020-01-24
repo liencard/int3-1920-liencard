@@ -4,56 +4,119 @@
 }
 
 .promo__img-wrapper {
+  width: 70vw;
+  margin: 0 auto;
   margin-top: -4rem;
   margin-bottom: 3rem;
 }
 
 .button__img-wrapper {
   margin: 0 auto;
+  width: 80vw;
 }
 
-.promo__img {
-  width: 95vw;
+.button__img {
+  width: 60vw;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  align-items: center;
+  padding: 5rem 0;
 }
 
 .footer__text {
   font-family: var(--fontTitleLongread);
   font-size: 2rem;
-  padding-bottom: 5rem;
-  text-align: right;
+}
+
+.white__humo {
+  width: 6rem;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 740px) {
+
+  .promo {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  .promo__img-wrapper {
+    width: 50vw;
+
+  }
+
+  .promo__img {
+    margin: 0 auto;
+    width: 50vw;
+  }
+
+  .button__img {
+    width: 30vw;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+
+  .promo {
+    padding: 10rem 8rem;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-gap: 5rem;
+    grid-template-areas:
+      'promo-img promo-title'
+      'promo-img promo-text';
+    width: 100%;
+  }
+
+  .promo__text-wrapper {
+    grid-area: promo-text;
+    text-align: center;
+  }
+
+  .promo__title {
+    grid-area: promo-title;
+    margin-bottom: 2rem;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .promo__img-wrapper {
+    grid-area: promo-img;
+    width: 100%;
+    align-self: center;
+  }
+
+  .promo__img {
+    width: 40vw;
+  }
+
+  .button__img-wrapper {
+    width: 20vw;
+  }
+
+  .button__img {
+    width: 15vw;
+  }
+
 }
 
 @media screen and (min-width: 1100px) {
 
   .promo {
-    padding: 10rem 14rem;
-    display: grid;
-    grid-template-columns: 4fr 5fr;
-    grid-gap: 5rem;
-    grid-template-areas: 'promo-img promo-text';
-  }
-
-  .promo__wrapper {
-    grid-area: promo-text;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .promo__title {
-    margin-bottom: 8rem;
-  }
-
-  .promo__img-wrapper {
-    grid-area: promo-img;
+    padding: 10rem 18rem;
+    grid-gap: 7.5rem;
   }
 
   .promo__img {
     width: 35vw;
   }
 
-  .button_img {
-    width: 15vw;
-  }
+  .footer__wrapper {
+    padding-right: 10rem;
+}
 }

@@ -99,16 +99,16 @@
 
   <div class="scroll__wrapper">
     <section class="morality">
-        <h2 class="part__title morality__title">Ieder voor zichzelf</h2>
-        <div class="morality-text__wrapper">
-          <p class="part__text">McCarthy beweert dat <span class="text__highlight">de samenleving de morele kompassen van de mensen dicteert.</span> Zonder deze maatschappelijke normen, zijn hun persoonlijke normen en moralen niet te onderscheiden van hun eigenbelang.<p>
-          <p class="part__text">In het boek zie je hoe, door de <span class="text__highlight">afwezigheid van de menselijke beschaving</span> en de sociale normen, iedereen uitsluitend <span class="text__highlight">handelt uit eigenbelang.</span> Iedereen is egoïstisch en gelooft steevast dat zijn of haar eigen daden correct en gerechtvaarigd zijn.<p>
-          <p class="part__text">De man kijkt alleen naar zijn zoon en zichzelf. Hierdoor, ziet hij al de andere overlevers als hun vijanden. Volgens hem zijn zij “de goede” en al de rest zijn “de slechte”.<p>
-        </div>
+      <h2 class="part__title morality__title">Ieder voor zichzelf</h2>
+      <div class="morality-text__wrapper">
+        <p class="part__text">McCarthy beweert dat <span class="text__highlight">de samenleving de morele kompassen van de mensen dicteert.</span> Zonder deze maatschappelijke normen, zijn hun persoonlijke normen en moralen niet te onderscheiden van hun eigenbelang.<p>
+        <p class="part__text">In het boek zie je hoe, door de <span class="text__highlight">afwezigheid van de menselijke beschaving</span> en de sociale normen, iedereen uitsluitend <span class="text__highlight">handelt uit eigenbelang.</span> Iedereen is egoïstisch en gelooft steevast dat zijn of haar eigen daden correct en gerechtvaarigd zijn.<p>
+        <p class="part__text">De man kijkt alleen naar zijn zoon en zichzelf. Hierdoor, ziet hij al de andere overlevers als hun vijanden. Volgens hem zijn zij “de goede” en al de rest zijn “de slechte”.<p>
+      </div>
       <div class="morality__img-wrapper">
         <picture>
           <source media="(max-width: 600px)" srcset="./assets/beelden/paint-spot-mini.png 375w" />
-          <source media="(min-width: 600px)" srcset="./assets/beelden/paint-spot.png 819w" />
+          <source media="(min-width: 600px)" srcset="./assets/beelden/paint-spot.png 300w" />
           <img src="assets/beelden/paint-spot.png" class="morality__img" alt="Paint spot with excerpt">
         </picture>
       </div>
@@ -180,13 +180,47 @@
           <li class="award__item year__image">The Guardian rangschikte The Road 17e op de lijst van <span class="text__highlight">‘100 beste boeken van de 21ste eeuw’.</span></li>
         </ul>
       </div>
-      <img class="marker__img" srcset="./assets/beelden/markers.png" sizes="15px" src="./assets/beelden/markers.png" alt="Markers">
+
+      <div class="reviews">
+        <div class="review">
+          <p class="review__text">één van zijn meest akelige <br> en liefde volle boeken.</p>
+          <a class="marker__link"><img class="img__marker" srcset="./assets/beelden/marker1.png" sizes="15px" src="./assets/beelden/marker1.png" alt="Marker line"></a>
+        </div>
+        <div class="review">
+          <p class="review__text">Het is aangrijpend, beangstigend en uitermate mooi. Misschien wel het beste boek van dit decenia, punt.</p>
+        </div>
+        <div class="review">
+          <p class="review__text">verhaal dat je bij blijft</p>
+          <a class="marker__link"><img class="img__marker" srcset="./assets/beelden/marker2.png" sizes="15px" src="./assets/beelden/marker2.png" alt="Marker line single"></a>
+        </div>
+        <div class="review">
+          <p class="review__text">één van zijn meest akelige <br> en liefde volle boeken</p>
+          <a class="marker__link"><img class="img__marker" srcset="./assets/beelden/marker3.png" sizes="15px" src="./assets/beelden/marker3.png" alt="Marker line 3 crossed"></a>
+        </div>
+        <div class="review">
+          <p class="review__text">Wonderschone Gruwelijkheid</p>
+        </div>
+        <div class="review">
+          <p class="review__text">laat een diepe indruk na</p>
+          <a class="marker__link"><img class="img__marker" srcset="./assets/beelden/marker4.png" sizes="15px" src="./assets/beelden/marker4.png" alt="Marker line 2"></a>
+        </div>
+      </div>
+      <img class="hover__arrow" srcset="./assets/beelden/hover-arrow.png" sizes="15px" src="./assets/beelden/hover-arrow.png" alt="Markers">
     </div>
   </section>
 
   <section class="part promo" id="section-7">
-    <div class="promo__wrapper">
-      <h2 class="part__title promo__title">Call to <br> action</h2>
+
+    <h2 class="part__title promo__title">Call to <br> action</h2>
+
+     <div class="promo__img-wrapper">
+      <img srcset="./assets/beelden/book-mini.png 326w,
+            ./assets/beelden/book-big.png 753w"
+        sizes="100vw"
+        class="promo__img" src="./assets/beelden/book-big.png" alt="Promo book The Road">
+    </div>
+
+    <div class="promo__text--wrapper">
       <p class="part__text">The Road is  <span class="text__highlight">meer dan gewoon een verhaal over een post- apocalyptische wereld.</span> Het gaat over de liefde tussen vader en zoon. Het gaat over de moed om je moralen te behouden in onmenselijke omstandigheden.<p>
       <p class="part__text">The Road is een somber verhaal over een een stervende planeet. Het zal je laten nadenken over het lot van de menselijkheid. Maar als je het nieuws op zet hoor je niet veel beter.<p>
       <a href="index.php?page=detail&id=8"><div class="button__img-wrapper">
@@ -196,17 +230,12 @@
           class="button__img" src="./assets/beelden/button.png" alt="Buy book button">
       </div></a>
     </div>
-    <div class="promo__img-wrapper">
-      <img srcset="./assets/beelden/book-mini.png 326w,
-            ./assets/beelden/book-big.png 753w"
-        sizes="100vw"
-        class="promo__img" src="./assets/beelden/book-big.png" alt="Promo book The Road">
-    </div>
+
   </section>
 
   <section class="part footer">
     <h2 class="hidden">Footer</h2>
-    <div class="footer-wraper">
+    <div class="footer__wrapper">
     <p class="footer__text">mogelijk gemaakt door</p>
     <img class="white__humo" srcset="./assets/beelden/humo-white.svg" sizes="15px" src="./assets/beelden/humo-white.sg" alt="White HUMO logo">
     </div>
