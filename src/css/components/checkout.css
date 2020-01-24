@@ -10,10 +10,10 @@
 
 .checkout__title {
   color: var(--redColor);
-  font-weight: 700;
+  font-weight: var(--fontWeightBold);
   font-family: var(--fontTitle);
   font-size: 2.4rem;
-  padding-bottom: 3rem;
+  padding-bottom: var(--spacerMedium);
 }
 
 .form__label {
@@ -21,8 +21,8 @@
   flex-direction: column;
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 2.5rem;
+  font-weight: var(--fontWeightBold);
+  margin-bottom: calc(var(--spacerBig) / 2);
 }
 
 .form__label input {
@@ -36,14 +36,14 @@
 }
 
 .checkout__adres {
-  margin-top: 3rem;
+  margin-top: var(--spacerMedium);
 }
 
 .wrapper__orderoverview {
   display: grid;
   grid-template-columns: 2fr 4fr 1fr 1fr;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacerSmall);
 }
 
 .orderoverview__img {
@@ -54,14 +54,14 @@
   display: flex;
   justify-content: space-between;
   border-top: .1rem dashed black;
-  font-weight: 700;
-  padding-top: 2rem;
+  font-weight: var(--fontWeightBold);
+  padding-top: var(--spacerSmall);
 }
 
 .order__pay {
   order: 2;
   border-top: .1rem dashed black;
-  padding-top: 3rem;
+  padding-top: var(--spacerMedium);
 }
 
 .form__text {
@@ -97,7 +97,7 @@
 
   .checkout__gegevens {
     display: inline-block;
-    padding-right: 2rem;
+    padding-right: var(--spacerSmall);
     border-right: .1rem dashed black;
     order: 0;
     grid-area: order;
@@ -120,7 +120,7 @@
   .checkout__title--extra {
     font-size: 1.4rem;
     font-family: var(--font);
-    font-weight: 500;
+    font-weight: var(--fontWeightRegular);
     color: black;
     display: inline-block;
   }
@@ -135,7 +135,7 @@
   }
 
   .checkout__gegevens {
-    padding-right: 4rem;
+    padding-right: calc(var(--spacerSmall) * 2);
   }
 
   .checkout {

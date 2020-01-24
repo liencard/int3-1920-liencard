@@ -31,7 +31,7 @@
 }
 
 .cart-icon {
-  padding-left: 3rem;
+  padding-left: var(--spacerMedium);
 }
 
 @media screen and (min-width: 940px) {

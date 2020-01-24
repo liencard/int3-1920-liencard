@@ -1,5 +1,5 @@
 .method__title {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacerSmall);
 }
 
 .payment__wrapper {
@@ -9,9 +9,9 @@
 }
 
 .payment__border {
-  box-shadow: 0px 2px 10px #e5e5e5;
-  border-radius: 7px;
-  padding: 2rem;
+  box-shadow: 0 .2rem 1rem #e5e5e5;
+  border-radius: .7rem;
+  padding: var(--spacerSmall);
   height: 12.5rem;
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@
 }
 
 .payment__img {
-  width: 10rem;
+  width: calc(var(--spacerBig) * 2);
 }
 
 .button__wrapper {
@@ -37,7 +37,7 @@
 }
 
 .btn__payment {
-  margin-top: 3rem;
+  margin-top: var(--spacerMedium);
 }
 
 .btn__payment--text {
@@ -47,7 +47,6 @@
 @media screen and (min-width: 700px) {
 
   .method {
-    /* width: 30vw; */
     max-width: 50rem;
     margin: 0 auto;
   }

@@ -7,7 +7,7 @@
   width: 100vw;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0;
+  padding: calc(var(--spacerSmall) * 2) 0;
   margin-top: calc(var(--spacerBig) / 2);
 }
 
@@ -19,7 +19,7 @@
 
   font-size: 1rem;
   text-transform: uppercase;
-  margin-top: 2rem;
+  margin-top: var(--spacerSmall);
 }
 
 .footer-small-items li {
@@ -30,7 +30,7 @@
 
   .footer-big {
     display: flex;
-    margin-top: 10rem;
+    margin-top: calc(var(--spacerBig) * 2);
   }
 
   .footer-small {

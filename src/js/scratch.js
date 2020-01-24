@@ -19,11 +19,13 @@
       img.addEventListener('load', event => {
         ctx.drawImage(img, 0, 0, $canvas.width, $canvas.height);
       });
+
+      // SCROLL FUNCTION
+      window.addEventListener(`scroll`, e => scrollbarHandler(e));
     }
     console.log('longread');
 
-    // SCROLL FUNCTION
-    window.addEventListener(`scroll`, e => scrollbarHandler(e));
+
   };
 
   const scrollbarHandler = () => {

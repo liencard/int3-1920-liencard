@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: var(--spacerBig);
 }
 
 .filter__input {
@@ -17,7 +17,7 @@
 
 .filter__text {
   text-transform: capitalize;
-  padding: 0 2rem;
+  padding: 0 var(--spacerSmall);
 }
 
 label:not(:last-of-type) .filter__text {
@@ -26,7 +26,7 @@ label:not(:last-of-type) .filter__text {
 
 .filter__input:checked ~ .filter__text {
   color: var(--redColor);
-  font-weight: 700;
+  font-weight: var(--fontWeightBold);
 }
 
 /* Highlights */
@@ -34,15 +34,15 @@ label:not(:last-of-type) .filter__text {
 .highlights {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5rem;
-  margin-top: 6rem;
+  grid-gap: var(--spacerBig);
+  margin-top: calc(var(--spacerMedium) * 2);
 }
 
 .highlight {
   display: flex;
   justify-content: space-between;
   height: 20rem;
-  padding: 0 3rem;
+  padding: 0 var(--spacerMedium);
 }
 
 .highlight__book {
@@ -56,7 +56,7 @@ label:not(:last-of-type) .filter__text {
 .highlight__title {
   font-size: 2.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: var(--fontWeightBold);
   line-height: 1.1;
   margin-top: 2.2rem;
   max-width: 24rem;
@@ -70,11 +70,11 @@ label:not(:last-of-type) .filter__text {
 
 .highlight__btn {
   padding: 1rem 1.5rem;
-  border-radius: 2px;
+  border-radius: var(--borderRadius);
   display: inline-block;
-  padding-right: 4rem;
+  padding-right: calc(var(--spacerSmall) * 2);
   font-size: 1.2rem;
-  margin-top: 2rem;
+  margin-top: var(--spacerSmall);
 
   &::after {
     content: '';
@@ -102,8 +102,8 @@ label:not(:last-of-type) .filter__text {
 .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5rem;
-  margin-top: 6rem;
+  grid-gap: var(--spacerBig);
+  margin-top: calc(var(--spacerMedium) * 2);
 }
 
 .product {
@@ -130,14 +130,14 @@ label:not(:last-of-type) .filter__text {
   font-size: 1.4rem;
   color: var(--gray3Color);
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: calc(var(--spacerSmall) / 2);
 }
 
 .product__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacerSmall);
 }
 
 .product__img {
@@ -154,12 +154,12 @@ label:not(:last-of-type) .filter__text {
   font-size: 1.6rem;
   color: var(--gray2Color);
   margin: 0;
-  font-weight: 700;
+  font-weight: var(--fontWeightBold);
 }
 
 .product__btn {
   background-color: var(--redColor);
-  border-radius: 2px;
+  border-radius: var(--borderRadius);
   display: flex;
   align-items: center;
   justify-content: center;
