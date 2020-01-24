@@ -29,12 +29,30 @@
   max-width: calc(var(--spacerBig) * 6);
 }
 
+.button__intro {
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 450px) {
 
   .clock__title {
     margin-top: -6rem;
     max-width: calc(var(--spacerBig) * 10);
   }
+
+  .button__intro {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+
+  .intro__title, .intro-text__wrapper {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (min-width: 740px) {
@@ -52,9 +70,11 @@
   .intro__title {
     grid-area: title;
     text-align: right;
+    min-width: 100%;
   }
 
   .intro-text__wrapper {
+    width: 100%;
     grid-area: text;
   }
 
@@ -65,6 +85,10 @@
   .intro__img {
     width: 40vw;
     margin-right: 0;
+  }
+
+  .button__intro {
+    width: 100%;
   }
 
   .clock {

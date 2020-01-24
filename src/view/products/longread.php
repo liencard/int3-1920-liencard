@@ -46,7 +46,7 @@
       <p class="part__text"><span class="text__highlight">De wereld is volledig vergaan:</span> bijna alle dieren en planten zijn uitgestorven, de lucht zit vol met as en de aarde is volledig verbrand en onvruchtbaar. ’s Nachts is het er koud, koud genoeg om stenen te breken en wanneer er sneeuw valt is het grijs.<p>
       <p class="part__text">Onderweg worstelen ze met <span class="text__highlight">honger, ziekte en de dreiging van dieven en kannibalen.</span> Het eten is schaars. Zo schaars dat de meeste mensen zijn overgaan tot kannibalisme. Ze willen er alles aan doen om te blijven leven en hebben al hun moralen volledig achtergelaten.<p>
       <p class="part__text"><span class="text__highlight">In een wereld waar de beschaving volledig verwoest is – hebben ze enkel elkaar.</span><p>
-      <a href="index.php?page=detail&id=8"><div class="button__img-wrapper">
+      <a href="index.php?page=detail&id=8"><div class="button__intro">
         <img srcset="./assets/beelden/button.png 326w,
               ./assets/beelden/button.png 753w"
           sizes="50vw"

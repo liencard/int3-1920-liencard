@@ -13,7 +13,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 2rem;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .morality {
@@ -30,7 +30,7 @@
 }
 
 .morality__arrow {
-  display: hidden;
+  display: none;
 }
 
 @media screen and (min-width: 500px) {
@@ -42,6 +42,7 @@
   .title__morality-quote {
     font-size: 8rem;
     line-height: 7.5rem;
+    max-width: 100%;
   }
 
   .morality__title {
