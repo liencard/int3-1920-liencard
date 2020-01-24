@@ -3,7 +3,7 @@
 @import './css/vars.css';
 @import './css/helpers.css';
 @import './css/typography.css';
-/* NAVIGATION */
+/* WEBSHOP */
 @import './css/components/navigation.css';
 @import './css/components/footer.css';
 @import './css/components/product.css';
@@ -22,11 +22,13 @@
 @import './css/longread/goodbad.css';
 @import './css/longread/awards.css';
 @import './css/longread/promo.css';
+@import './css/longread/process.css';
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 /* stylelint-disable*/

@@ -7,22 +7,46 @@
       <h1 class="header__title">De Weg</h1>
       <p class="header__subtitle">Cormac McCarthy</p>
     </div>
-    <img src="assets/beelden/arrow-down2.png" class="header__arrow" alt="arrow downward">
-
-    <!-- <div class="header__img">
-      <picture>
-        <source media="(max-width: 450px)" srcset="./assets/beelden/header-mobile.png 375w" />
-        <source media="(max-width: 800px)" srcset="./assets/beelden/header-tablet.png 1194w" />
-        <source media="(min-width: 1400px)" srcset="./assets/beelden/header-desktop.png 1438w" />
-        <img class="header__image" src="assets/beelden/header-tablet.png" alt="The Road header image">
-      </picture>
-    </div> -->
+    <a href="#quote-one"><img src="assets/beelden/arrow-down2.png" class="header__arrow" alt="arrow downward"></a>
   </section>
 
-  <section class='quotes'>
+  <div class="progress__container">
+
+    <div class="processbar--wrapper">
+      <p>Quotes</p>
+      <a class="section-link" href="#section-1"><div class="process-circle"></div></a>
+      <div class="process-line"></div>
+
+      <p>Intro</p>
+      <a class="section-link" href="#section-2"><div class="process-circle"></div></a>
+      <div class="process-line"></div>
+
+      <p>Het begin</p>
+      <a class="section-link" href="#section-3"><div class="process-circle"></div></a>
+      <div class="process-line"></div>
+
+      <p>Moraliteit</p>
+      <a class="section-link" href="#section-4"><div class="process-circle"></div></a>
+      <div class="process-line"></div>
+
+      <p>Goed vs Slecht</p>
+      <a class="section-link" href="#section-5"><div class="process-circle"></div></a>
+      <div class="process-line"></div>
+
+      <p>Awards</p>
+      <a class="section-link" href="#section-6"><div class="process-circle"></div></a>
+      <div class="process-line"></div>
+
+      <p>Action</p>
+      <a class="section-link" href="#section-7"><div class="process-circle"></div></a>
+    </div>
+
+  </div>
+
+  <section class='quotes' id="section-1">
     <h2 class="hidden">Quotes</h2>
 
-    <div class="quote__one">
+    <div class="quote__one" id="quote-one">
       <p class="quote">Ben je een van de goeden</p>
     </div>
     <div class="quote__two">
@@ -30,7 +54,7 @@
     </div>
   </section>
 
-  <section class="part intro">
+  <section class="part intro" id="section-2">
     <h2 class="part__title intro__title">Lorum Ipsum</h2>
     <div class="intro-text__wrapper">
       <p class="part__text">Volg het verhaal van een vader en zoon, die in een <span class="text__highlight">post-apocalyptische wereld</span>, een tocht afleggen naar het zuiden. In hoop de winter zo te kunnen ontsnappen en te overleven.<p>
@@ -50,7 +74,7 @@
     </div>
   </section>
 
-  <section class="part clock">
+  <section class="part clock" id="section-3">
     <div class="clock__wrapper">
       <h2 class="part__title clock__title">Om 1:17 bleven de klokken stilstaan.</h2>
       <div class="clock-text__wrapper">
@@ -68,7 +92,7 @@
     </div>
   </section>
 
-  <section class="part morality-quote">
+  <section class="part morality-quote" id="section-4">
     <h2 class="part__title title__morality-quote">In een post  apocalyptische wereld, hoe behoud je je moraliteit?</h2>
     <img class="arrow-down" srcset="./assets/beelden/arrow-down.png" sizes="15px" src="./assets/beelden/arrow-down.png" alt="White arrow brush">
   </section>
@@ -90,7 +114,7 @@
       </div>
     </section>
 
-    <section class="part goodbad">
+    <section class="part goodbad" id="section-5">
       <div class="text__wrapper">
         <h2 class="part__title goodbad__title">De goede <br> versus <br> de slechte</h2>
         <p class="part__text">Volgens The Road, wat houd het in om een van de “goede” te zijn? In het boek is er één duidelijke regel wat de goede van de slechte onderscheid: <span class="text__highlight">De slechte eten mensen, de goede niet.</span><p>
@@ -141,7 +165,7 @@
     </section>
   </div>
 
-  <section class="part awards">
+  <section class="part awards" id="section-6">
     <div class="awards__bigwrapper">
       <h2 class="part__title awards__title">Rijkelijk <br> bekroond <br> boek</h2>
       <div class="awards__text-wrapper">
@@ -160,7 +184,7 @@
     </div>
   </section>
 
-  <section class="part promo">
+  <section class="part promo" id="section-7">
     <div class="promo__wrapper">
       <h2 class="part__title promo__title">Call to <br> action</h2>
       <p class="part__text">The Road is  <span class="text__highlight">meer dan gewoon een verhaal over een post- apocalyptische wereld.</span> Het gaat over de liefde tussen vader en zoon. Het gaat over de moed om je moralen te behouden in onmenselijke omstandigheden.<p>

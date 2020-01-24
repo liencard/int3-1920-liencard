@@ -2,6 +2,7 @@
   background-image: url(../../assets/beelden/header750.png);
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 999;
   /* height: 95vh; */
   /* width: 100vw; */
 }
